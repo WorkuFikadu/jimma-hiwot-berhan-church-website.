@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons — Jimma Hiwot Berhan Church</title>
+    <meta name="description" content="Listen to powerful sermons from Jimma Hiwot Berhan Church. Watch video sermons, explore sermon series, and be encouraged by God's Word.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                    gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                    terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                    ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                    charcoal: '#2D2D2D',
+                },
+                fontFamily: { heading: ['Playfair Display','Georgia','serif'], body: ['Inter','system-ui','sans-serif'] }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-ivory">
+<!-- Background Decoration -->
+<div class="bg-texture"></div>
+<div class="bg-pattern"></div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px]" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5 active">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item active" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px]" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px]" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold active" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero relative bg-forest-dark pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Sermons Background" class="w-full h-full object-cover opacity-25 animate-slow-zoom">
+        <div class="page-hero-overlay absolute inset-0 z-10"></div>
+    </div>
+    <div class="relative z-20 max-w-4xl mx-auto px-4 text-center">
+        <nav class="breadcrumb text-sm mb-4">
+            <a href="index.html" data-i18n="nav_home">Home</a> <span class="text-white/40 mx-2">/</span> <span class="text-white/60" data-i18n="nav_sermons">Sermons</span>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-i18n="nav_sermons">Sermons</h1>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto font-light">God's Word for Your Life — listen, watch, and be transformed by the power of biblical teaching.</p>
+    </div>
+</section>
+
+<!-- GOD'S WORD INTRO -->
+<section class="py-16 md:py-20 bg-ivory">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+        <div class="ornament-divider mb-6">
+            <span></span>
+            <svg class="w-5 h-5 text-gold" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="4"/></svg>
+            <span></span>
+        </div>
+        <blockquote class="font-heading text-xl md:text-2xl italic text-forest-dark mb-8 leading-relaxed">
+            "For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart."
+        </blockquote>
+        <p class="text-gold-dark font-semibold text-sm">— Hebrews 4:12</p>
+        <div class="content-section text-charcoal/70 mt-8 max-w-3xl mx-auto space-y-4 text-left">
+            <p>
+                At Jimma Hiwot Berhan Church, we believe that the preaching and teaching of God's Word is central to the life of every believer. Each week, our pastors prepare messages that are deeply rooted in Scripture, culturally relevant, and practically applicable to the challenges and opportunities of everyday life. Whether you are exploring faith for the first time or have been walking with God for decades, you will find encouragement, conviction, and direction in our sermons.
+            </p>
+            <p>
+                We invite you to browse our sermon library, watch recent messages, or explore one of our sermon series. Each message is prayerfully prepared and delivered with the desire that you would not only hear the Word but be transformed by it. As Jesus said, "Everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock" (Matthew 7:24).
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED SERMON -->
+<section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="sermons_featured_title" data-i18n="sermons_featured_title">Featured Sermon</h2>
+        </div>
+        <div class="max-w-5xl mx-auto bg-gradient-to-br from-forest-dark to-forest rounded-3xl overflow-hidden shadow-2xl fade-in">
+            <div class="grid md:grid-cols-2">
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <span class="inline-block bg-gold text-forest-dark text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit uppercase tracking-wider" data-i18n="label_featured">Featured</span>
+                    <h3 class="font-heading text-2xl md:text-3xl font-bold text-white mb-4">The Transforming Power of Grace</h3>
+                    <p class="text-gold-light text-sm mb-3 flex items-center gap-2"><i data-lucide="user" class="w-4 h-4"></i> Pastor Abraham Tadesse</p>
+                    <p class="text-gold-light text-sm mb-6 flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i data-i18n="date_sunday_jan_12" data-i18n="date_sunday_jan_12">Sunday, January 12, 2025</p>
+                    <p class="text-white/70 text-sm leading-relaxed mb-8">
+                        In this powerful featured message, Pastor Abraham explores the depths of God's grace and how it has the power to completely transform every area of our lives. Drawing from Ephesians 2 and the story of the prodigal son, he reveals how grace is not merely a theological concept but a living, active force that changes hearts, restores relationships, and empowers us to live beyond our circumstances.
+                    </p>
+                    <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-forest-dark font-bold rounded-xl hover:bg-gold-light transition-colors w-fit">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i> Watch This Sermon
+                    </button>
+                </div>
+                <div class="relative hidden md:block">
+                    <img src="../images/photo_2026-04-08_12-45-33.jpg" alt="Featured Sermon" class="w-full h-full object-cover opacity-40">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="w-20 h-20 bg-gold rounded-full flex items-center justify-center hover:bg-gold-light transition-colors shadow-lg cta-pulse">
+                            <i data-lucide="play" class="w-8 h-8 text-forest-dark ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERMON FILTER & SEARCH -->
+<section class="py-12 md:py-16 bg-ivory-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6">All Sermons</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="sermons_browse_desc" data-i18n="sermons_browse_desc">Browse our complete sermon library. Use the filters below to find messages by speaker or topic.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 fade-in">
+            <div class="relative">
+                <i data-lucide="search" class="w-4 h-4 text-charcoal/40 absolute left-3 top-1/2 -translate-y-1/2"></i>
+                <input type="text" id="sermon-search" placeholder="Search sermons..." class="form-input pl-10 pr-4 py-3 border border-forest/20 rounded-xl text-sm w-full sm:w-72 bg-white focus:ring-0">
+            </div>
+            <select id="sermon-speaker-filter" class="form-input px-4 py-3 border border-forest/20 rounded-xl text-sm bg-white w-full sm:w-52 focus:ring-0">
+                <option value=">All Speakers</option>
+            </select>
+        </div>
+        <div id="sermons-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
+            <div class="text-center py-12 text-charcoal/40 col-span-full">
+                <i data-lucide="loader" class="w-8 h-8 animate-spin mx-auto mb-3"></i>
+                Loading sermons...
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERMON SERIES -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="sermons_series_title" data-i18n="sermons_series_title">Sermon Series</h2>
+            <p class="text-charcoal/60 mt-8">Our sermon series dive deep into specific topics or books of the Bible over several weeks, providing comprehensive teaching that builds week by week.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 fade-in">
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card">
+                <div class="bg-gradient-to-br from-forest to-forest-dark p-8 text-center">
+                    <i data-lucide="book-open" class="w-10 h-10 text-gold mx-auto mb-3"></i>
+                    <h3 class="font-heading text-xl font-bold text-white">The Beatitudes</h3>
+                    <p class="text-gold-light text-sm mt-1">12 Sermons</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4">
+                        In this comprehensive series through Matthew 5:1-12, Pastor Abraham unpacks each of the eight Beatitudes and reveals how these counter-cultural teachings of Jesus offer a radically different vision for human flourishing. From "Blessed are the poor in spirit" to "Blessed are those who are persecuted," each message challenges our assumptions and invites us into the abundant life that Jesus promises.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-charcoal/50">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span data-i18n="date_sept_nov_2024" data-i18n="date_sept_nov_2024">September — November 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card">
+                <div class="bg-gradient-to-br from-gold-dark to-gold p-8 text-center">
+                    <i data-lucide="footprints" class="w-10 h-10 text-white mx-auto mb-3"></i>
+                    <h3 class="font-heading text-xl font-bold text-white" data-i18n="sermon_series_1" data-i18n="sermon_series_1">Walking in Faith</h3>
+                    <p class="text-white/80 text-sm mt-1">8 Sermons</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4">
+                        Faith is not the absence of doubt — it is choosing to trust God in the midst of uncertainty. This series examines the lives of biblical characters like Abraham, Moses, Joshua, and Ruth who walked by faith and not by sight. Each message provides practical insights on how to strengthen your faith, overcome fear, and step boldly into the plans God has for your life.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-charcoal/50">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span data-i18n="date_jun_aug_2024" data-i18n="date_jun_aug_2024">June — August 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card">
+                <div class="bg-gradient-to-br from-terracotta to-terracotta-light p-8 text-center">
+                    <i data-lucide="hand-heart" class="w-10 h-10 text-white mx-auto mb-3"></i>
+                    <h3 class="font-heading text-xl font-bold text-white" data-i18n="grace_and_giving">Grace &amp; Giving</h3>
+                    <p class="text-white/80 text-sm mt-1">6 Sermons</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4">
+                        God's grace is the foundation for every aspect of the Christian life, including our generosity. This series explores the profound connection between understanding God's grace and developing a lifestyle of generous giving. Through passages from 2 Corinthians, Malachi, and the Gospels, we discover that giving is not an obligation but a joyful response to the extravagant grace we have received.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-charcoal/50">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span data-i18n="date_mar_apr_2024" data-i18n="date_mar_apr_2024">March — April 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW TO LISTEN -->
+<section class="py-16 md:py-24 bg-ivory-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6">How to Listen</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="sermons_access_desc" data-i18n="sermons_access_desc">Access our sermons anytime, anywhere through multiple platforms.</p>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-8 fade-in">
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card text-center">
+                <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="globe" class="w-8 h-8 text-forest"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-3">On Our Website</h3>
+                <p class="text-charcoal/70 text-sm leading-relaxed">
+                    All sermons are available right here on our website. Browse the sermon library above, search by topic or speaker, and watch video recordings directly in your browser. Sermon notes and discussion questions are also available for download to help you go deeper into each message at your own pace.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card text-center">
+                <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="youtube" class="w-8 h-8 text-red-600"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-3" data-i18n="youtube_channel">YouTube Channel</h3>
+                <p class="text-charcoal/70 text-sm leading-relaxed">
+                    Subscribe to our YouTube channel "Jimma Hiwot Berhan Church Jimma" to watch all sermons in high quality video. You can also listen to audio-only versions, leave comments, and share messages with friends and family. New sermons are uploaded every Monday by 10:00 AM.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card text-center">
+                <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="headphones" class="w-8 h-8 text-purple-600"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-3" data-i18n="podcast_label">Podcast</h3>
+                <p class="text-charcoal/70 text-sm leading-relaxed">
+                    Take our sermons with you wherever you go! Our podcast "Jimma Hiwot Berhan Church Sermons" is available on Spotify, Apple Podcasts, and Google Podcasts. Subscribe to automatically receive new sermon audio each week, perfect for your commute, workout, or quiet time with God.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer-gradient text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4 group">
+                    <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo" class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed mb-4" data-i18n="footer_desc">A place of worship, hope, and community in Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank" rel="noopener noreferrer" title="Facebook" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer" title="YouTube" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                    <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><i data-lucide="send" class="w-4 h-4"></i></a>
+                    <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer" title="TikTok" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><i data-lucide="music" class="w-4 h-4"></i></a>
+                    <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                <ul class="space-y-2 text-sm text-white/60">
+                    <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>Jimma Town, Oromia, Ethiopia</li>
+                    <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                    <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>info@hiwotberhan.org</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+            <p>&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+            <p class="font-heading italic text-gold/60" data-i18n="footer_verse">"For where two or three gather in my name, there am I with them." — Matthew 18:20</p>
+        </div>
+    
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+</footer>
+<div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center modal-overlay">
+    <div class="relative w-full max-w-3xl mx-4">
+        <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gold"><i data-lucide="x" class="w-8 h-8"></i></button>
+        <div class="bg-black rounded-xl overflow-hidden aspect-video"><iframe id="video-iframe" class="w-full h-full" frameborder="0" allowfullscreen allow="autoplay"></iframe></div>
+    </div>
+</div>
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    const grid = document.getElementById('sermons-grid');
+    const searchInput = document.getElementById('sermon-search');
+    const speakerFilter = document.getElementById('sermon-speaker-filter');
+    let allSermons = [];
+
+    const headerColors = ['bg-forest', 'bg-terracotta', 'bg-gold-dark', 'bg-forest-light', 'bg-gold'];
+    const btnColors = ['bg-forest hover:bg-forest-light', 'bg-terracotta hover:bg-terracotta-light', 'bg-gold-dark hover:bg-gold', 'bg-forest-light hover:bg-forest', 'bg-gold hover:bg-gold-light'];
+
+    try {
+        const data = await fetchAPI('../api/get_sermons.php');
+        if (data && data.length > 0) {
+            allSermons = data;
+            // Populate speaker dropdown
+            const speakers = [...new Set(data.map(s => s.speaker))].sort();
+            speakers.forEach(sp => {
+                const opt = document.createElement('option');
+                opt.value = sp; opt.textContent = sp;
+                speakerFilter.appendChild(opt);
+            });
+            renderSermons(data);
+        } else {
+            renderFallbackSermons();
+        }
+    } catch(e) {
+        renderFallbackSermons();
+    }
+
+    function renderSermons(sermons) {
+        if (sermons.length === 0) {
+            grid.innerHTML = '<div class="text-center py-12 text-charcoal/40 col-span-full"><i data-lucide="search-x" class="w-10 h-10 mx-auto mb-3"></i><p>No sermons found matching your search.</p></div>';
+            if (window.lucide) lucide.createIcons();
+            return;
+        }
+        grid.innerHTML = sermons.map((s, i) => {
+            const ci = i % headerColors.length;
+            const dateStr = s.date ? formatDate(s.date) : 'Date not available';
+            const desc = s.description || 'Join us for this powerful message from God\'s Word.';
+            const videoUrl = s.video_url || 'https://www.youtube.com/embed/z16qLaRTXdo';
+            return '<div class="bg-white rounded-2xl overflow-hidden shadow-md church-card">' +
+                '<div class="' + headerColors[ci] + ' p-4 flex items-center gap-2">' +
+                '<i data-lucide="calendar" class="w-4 h-4 text-gold-light"></i>' +
+                '<span class="text-sm text-gold-light">' + dateStr + '</span></div>' +
+                '<div class="p-6">' +
+                '<h3 class="font-heading text-lg font-bold text-forest-dark mb-2">' + (s.title || 'Sermon') + '</h3>' +
+                '<p class="text-sm text-charcoal/50 mb-2 flex items-center gap-1"><i data-lucide="user" class="w-4 h-4"></i> ' + (s.speaker || 'Guest Speaker') + '</p>' +
+                '<p class="text-sm text-charcoal/70 leading-relaxed line-clamp-4 mb-4">' + desc + '</p>' +
+                '<button onclick="openVideo(\'' + videoUrl + '\')" class="inline-flex items-center gap-2 px-5 py-2.5 ' + btnColors[ci] + ' text-white text-sm font-semibold rounded-lg transition-colors">' +
+                '<i data-lucide="play-circle" class="w-4 h-4"></i data-i18n="btn_watch_now">Watch Now</button></div></div>';
+        }).join('');
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function renderFallbackSermons() {
+        const fallback = [
+            { title: 'Walking in the Light of God\'s Grace', speaker: 'Pastor Abraham Tadesse', date: '2025-01-12', description: 'Exploring what it means to walk daily in the grace of God from Ephesians 2:8-9.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'The Power of Persistent Prayer', speaker: 'Pastor Samuel Kebede', date: '2025-01-05', description: 'An inspiring message on persistent prayer using the parable of the persistent widow from Luke 18.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'A New Year, A New Beginning in Christ', speaker: 'Pastor Abraham Tadesse', date: '2024-12-29', description: 'Reflecting on 2 Corinthians 5:17 — leaving behind past failures and embracing God\'s forgiveness.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'Finding Peace in Troubled Times', speaker: 'Pastor Samuel Kebede', date: '2024-12-22', description: 'Discovering the peace that surpasses understanding through Philippians 4:6-7.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'The Faithfulness of God', speaker: 'Pastor Daniel Hailu', date: '2024-12-15', description: 'An exploration of God\'s unwavering faithfulness throughout Scripture and in our daily lives.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'Love One Another', speaker: 'Pastor Abraham Tadesse', date: '2024-12-08', description: 'A powerful study on Jesus\' new commandment to love one another as He has loved us from John 13:34-35.', video_url: 'https://www.youtube.com/embed/z16qLaRTXdo' }
+        ];
+        allSermons = fallback;
+        const speakers = [...new Set(fallback.map(s => s.speaker))].sort();
+        speakers.forEach(sp => {
+            const opt = document.createElement('option');
+            opt.value = sp; opt.textContent = sp;
+            speakerFilter.appendChild(opt);
+        });
+        renderSermons(fallback);
+    }
+
+    searchInput.addEventListener('input', function() {
+        const q = this.value.toLowerCase();
+        const sp = speakerFilter.value;
+        const filtered = allSermons.filter(s => {
+            const matchSearch = !q || s.title.toLowerCase().includes(q) || (s.description || '').toLowerCase().includes(q) || s.speaker.toLowerCase().includes(q);
+            const matchSpeaker = !sp || s.speaker === sp;
+            return matchSearch && matchSpeaker;
+        });
+        renderSermons(filtered);
+    });
+
+    speakerFilter.addEventListener('change', function() {
+        const q = searchInput.value.toLowerCase();
+        const sp = this.value;
+        const filtered = allSermons.filter(s => {
+            const matchSearch = !q || s.title.toLowerCase().includes(q) || (s.description || '').toLowerCase().includes(q) || s.speaker.toLowerCase().includes(q);
+            const matchSpeaker = !sp || s.speaker === sp;
+            return matchSearch && matchSpeaker;
+        });
+        renderSermons(filtered);
+    });
+});
+</script>
+
+</body>
+</html>

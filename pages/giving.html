@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giving — Jimma Hiwot Berhan Church</title>
+    <meta name="description" content="Learn about giving at Jimma Hiwot Berhan Church. Support our mission through tithes, offerings, and donations. Multiple giving options available.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                    gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                    terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                    ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                    charcoal: '#2D2D2D',
+                },
+                fontFamily: { heading: ['Playfair Display','Georgia','serif'], body: ['Inter','system-ui','sans-serif'] }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-ivory">
+<!-- Background Decoration -->
+<div class="bg-texture"></div>
+<div class="bg-pattern"></div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px]" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px] active" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px]" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold active" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero relative bg-forest-dark pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Giving Background" class="w-full h-full object-cover opacity-25 animate-slow-zoom">
+        <div class="page-hero-overlay absolute inset-0 z-10"></div>
+    </div>
+    <div class="relative z-20 max-w-4xl mx-auto px-4 text-center">
+        <nav class="breadcrumb text-sm mb-4">
+            <a href="index.html" data-i18n="nav_home">Home</a> <span class="text-white/40 mx-2">/</span> <span class="text-white/60" data-i18n="nav_giving">Giving</span>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-i18n="giving_hero_title">Give Generously</h1>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto font-light" data-i18n="giving_hero_subtitle">Your generosity transforms lives and advances God's kingdom. Every gift, no matter the size, makes an eternal difference.</p>
+    </div>
+</section>
+
+<!-- WHY WE GIVE -->
+<section class="py-16 md:py-24 bg-ivory overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center fade-in">
+            <div class="order-2 lg:order-1">
+                <div class="mb-10">
+                    <div class="ornament-divider mb-6">
+                        <span></span>
+                        <svg class="w-5 h-5 text-gold" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="4"/></svg>
+                        <span></span>
+                    </div>
+                    <blockquote class="font-heading text-xl md:text-3xl italic text-forest-dark mb-4 leading-relaxed">
+                        "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+                    </blockquote>
+                    <p class="text-gold-dark font-semibold text-sm tracking-widest">— 2 CORINTHIANS 9:7</p>
+                </div>
+                <div class="content-section text-charcoal/70 space-y-6 text-lg leading-relaxed">
+                    <p>
+                        Giving is a fundamental act of worship and an expression of our trust in God's provision. At Jimma Hiwot Berhan Church, we believe that everything we have belongs to God.
+                    </p>
+                    <div class="flex items-center gap-4 pt-6">
+                        <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="flex items-center gap-3 px-6 py-3 bg-forest text-white rounded-full font-bold hover:bg-forest-light transition-colors">
+                            <i data-lucide="play-circle" class="w-5 h-5"></i> Watch Impact Story
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 relative group">
+                <div class="absolute -inset-4 bg-forest/5 rounded-[2.5rem] rotate-3 group-hover:rotate-0 transition-transform duration-700"></div>
+                <div class="relative rounded-[2rem] overflow-hidden shadow-2xl">
+                    <img src="../images/photo_2026-04-07_13-03-31.jpg" alt="Impact of Giving" class="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-forest-dark/60 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-white p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+                        <p class="text-sm italic font-light">"Your generosity transforms lives and advances God's kingdom."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WAYS TO GIVE -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="giving_ways_title" data-i18n="giving_ways_title">Ways to Give</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="giving_ways_desc" data-i18n="giving_ways_desc">We have made it convenient for you to give through multiple channels. Choose the method that works best for you.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in">
+            <!-- Bank Transfer -->
+            <div class="bg-ivory rounded-2xl p-8 shadow-md church-card">
+                <div class="w-16 h-16 bg-forest/10 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="landmark" class="w-8 h-8 text-forest"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-4" data-i18n="giving_bank_transfer">Bank Transfer</h3>
+                <p class="text-[11px] text-forest font-bold uppercase tracking-wider mb-4">የጅማ የሕይወት ብርሃን ቤተክርስቲያን የባንክ ቁጥሮች</p>
+                <div class="space-y-4 text-sm text-charcoal/70">
+                    <div class="bg-white/50 p-4 rounded-xl border border-forest/5">
+                        <p class="font-semibold text-charcoal text-xs uppercase tracking-tighter mb-1">የንግድ ባንክ (CBE)</p>
+                        <p class="font-mono text-forest font-bold text-lg">1000260950936</p>
+                    </div>
+                    <div class="bg-white/50 p-4 rounded-xl border border-forest/5">
+                        <p class="font-semibold text-charcoal text-xs uppercase tracking-tighter mb-1">የብርሃን ባንክ (Berhan Bank)</p>
+                        <p class="font-mono text-forest font-bold text-lg">2000200065103</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-forest/5">
+                    <p class="text-xs italic text-charcoal/60 leading-relaxed">
+                        "…ለስሙም ያሳያችሁትን ፍቅር ይረሳ ዘንድ ዓመፀኛ አይደለምና።"
+                    </p>
+                    <p class="text-[10px] font-bold text-gold-dark mt-2">— ዕብ 6፡10</p>
+                </div>
+            </div>
+
+            <!-- Mobile Banking -->
+            <div class="bg-ivory rounded-2xl p-8 shadow-md church-card">
+                <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="smartphone" class="w-8 h-8 text-gold-dark"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-4" data-i18n="giving_mobile_money">Mobile Banking</h3>
+                <div class="space-y-4 text-sm text-charcoal/70">
+                    <div class="bg-white rounded-xl p-4">
+                        <p class="font-semibold text-charcoal mb-1" data-i18n="giving_telebirr">Telebirr</p>
+                        <p class="font-mono text-forest font-bold text-lg">0911-234-567</p>
+                        <p class="text-xs text-charcoal/50 mt-1" data-i18n="giving_account_name" data-i18n="giving_account_name">Name: Jimma Hiwot Berhan Church</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4">
+                        <p class="font-semibold text-charcoal mb-1" data-i18n="giving_cbebirr">CBE Birr</p>
+                        <p class="font-mono text-forest font-bold text-lg">0945-678-901</p>
+                        <p class="text-xs text-charcoal/50 mt-1" data-i18n="giving_account_name" data-i18n="giving_account_name">Name: Jimma Hiwot Berhan Church</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4">
+                        <p class="font-semibold text-charcoal mb-1" data-i18n="amole_dashen">Amole (Dashen Bank)</p>
+                        <p class="font-mono text-forest font-bold text-lg">0922-345-678</p>
+                        <p class="text-xs text-charcoal/50 mt-1" data-i18n="giving_account_name" data-i18n="giving_account_name">Name: Jimma Hiwot Berhan Church</p>
+                    </div>
+                </div>
+                <p class="text-xs text-charcoal/50 mt-4" data-i18n="mobile_banking_fast">Mobile banking is the fastest way to give. Transfers are processed instantly.</p>
+            </div>
+            <!-- In Person -->
+            <div class="bg-ivory rounded-2xl p-8 shadow-md church-card">
+                <div class="w-16 h-16 bg-terracotta/10 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="church" class="w-8 h-8 text-terracotta"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-4">In Person</h3>
+                <div class="space-y-3 text-sm text-charcoal/70 leading-relaxed">
+                    <p>
+                        You can give during any of our worship services by placing your tithe or offering in the offering box located at the entrance of the sanctuary. Offering envelopes are available at the Welcome Desk for those who wish to use them.
+                    </p>
+                    <p>
+                        For large donations or special gifts, we encourage you to visit the church office during business hours (Monday-Saturday, 8:00 AM - 5:00 PM) where our finance team can assist you and provide a receipt.
+                    </p>
+                    <div class="flex items-start gap-2 mt-3">
+                        <i data-lucide="info" class="w-4 h-4 text-gold-dark flex-shrink-0 mt-0.5"></i>
+                        <p class="text-xs text-charcoal/50" data-i18n="offering_boxes_counted">Offering boxes are opened and counted by at least two authorized finance team members following strict financial procedures.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Online (Coming Soon) -->
+            <div class="bg-ivory rounded-2xl p-8 shadow-md church-card relative overflow-hidden">
+                <div class="absolute top-4 right-4 bg-gold text-forest-dark text-xs font-bold px-3 py-1 rounded-full" data-i18n="coming_soon">Coming Soon</div>
+                <div class="w-16 h-16 bg-forest-light/10 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="credit-card" class="w-8 h-8 text-forest-light"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold text-forest-dark mb-4" data-i18n="giving_online">Online Giving</h3>
+                <div class="space-y-3 text-sm text-charcoal/70 leading-relaxed">
+                    <p>
+                        We are currently working on setting up a secure online giving platform that will allow you to give using credit cards, debit cards, or bank transfers directly from our website. This platform will support both one-time gifts and recurring monthly donations.
+                    </p>
+                    <p>
+                        We anticipate launching online giving by the end of Q2 2025. In the meantime, please use one of the other giving methods listed above. We appreciate your patience and continued generosity!
+                    </p>
+                    <p>
+                        If you would like to be notified when online giving becomes available, please send an email to finance@hiwotberhan.org with the subject "Online Giving Update."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHERE YOUR GIVING GOES -->
+<section class="py-16 md:py-24 bg-ivory-dark overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="where_giving_goes">Where Your Giving Goes</h2>
+            <p class="text-charcoal/60 mt-8">We are committed to transparency. Here is how your gifts are allocated to advance God's work.</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-start fade-in">
+            <div class="space-y-6">
+                <!-- Church Building Fund -->
+                <div class="group bg-white rounded-xl p-6 shadow-sm border-l-4 border-forest hover:shadow-md transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-forest/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="building-2" class="w-5 h-5 text-forest"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-forest-dark" data-i18n="church_building_fund">Church Building Fund</h3>
+                        </div>
+                        <span class="text-2xl font-bold text-forest">30%</span>
+                    </div>
+                    <div class="w-full bg-forest/10 rounded-full h-2 mb-3">
+                        <div class="bg-forest rounded-full h-2 group-hover:w-full transition-all duration-1000" style="width: 30%"></div>
+                    </div>
+                </div>
+                <!-- Community Outreach -->
+                <div class="group bg-white rounded-xl p-6 shadow-sm border-l-4 border-terracotta hover:shadow-md transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-terracotta/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="heart-handshake" class="w-5 h-5 text-terracotta"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-forest-dark" data-i18n="min_outreach_title">Community Outreach</h3>
+                        </div>
+                        <span class="text-2xl font-bold text-terracotta">25%</span>
+                    </div>
+                    <div class="w-full bg-terracotta/10 rounded-full h-2 mb-3">
+                        <div class="bg-terracotta rounded-full h-2 group-hover:w-full transition-all duration-1000" style="width: 25%"></div>
+                    </div>
+                </div>
+                <!-- Youth & Children -->
+                <div class="group bg-white rounded-xl p-6 shadow-sm border-l-4 border-gold hover:shadow-md transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="baby" class="w-5 h-5 text-gold-dark"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-forest-dark">Youth & Children</h3>
+                        </div>
+                        <span class="text-2xl font-bold text-gold-dark">20%</span>
+                    </div>
+                    <div class="w-full bg-gold/10 rounded-full h-2 mb-3">
+                        <div class="bg-gold-dark rounded-full h-2 group-hover:w-full transition-all duration-1000" style="width: 20%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-2xl overflow-hidden shadow-lg h-48 group">
+                    <img src="../images/photo_2026-04-07_13-03-36.jpg" alt="Church Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg h-64 group">
+                    <img src="../images/photo_2026-04-08_12-42-30.jpg" alt="Outreach" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg h-64 -mt-16 group">
+                    <img src="../images/photo_2026-04-08_12-32-15.jpg" alt="Next Gen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg h-48 group">
+                    <img src="../images/photo_2026-04-08_12-31-20.jpg" alt="Operations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANNUAL GIVING REPORT -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="annual_giving_report">Annual Giving Report</h2>
+            <p class="text-charcoal/60 mt-8">We are committed to financial transparency. Below is a summary of our annual giving and allocation for the past two fiscal years.</p>
+        </div>
+        <div class="overflow-x-auto rounded-2xl shadow-lg fade-in">
+            <table class="church-table w-full text-sm">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-4 text-left font-semibold rounded-tl-xl" data-i18n="table_category">Category</th>
+                        <th class="px-6 py-4 text-right font-semibold">2024 (ETB)</th>
+                        <th class="px-6 py-4 text-right font-semibold rounded-tr-xl">2025 (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium">Total Tithes &amp; Offerings</td>
+                        <td class="px-6 py-4 text-right font-bold text-forest">4,250,000</td>
+                        <td class="px-6 py-4 text-right font-bold text-forest">4,850,000</td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium">Church Building Fund</td>
+                        <td class="px-6 py-4 text-right">1,275,000</td>
+                        <td class="px-6 py-4 text-right">1,455,000</td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium" data-i18n="min_outreach_title">Community Outreach</td>
+                        <td class="px-6 py-4 text-right">1,062,500</td>
+                        <td class="px-6 py-4 text-right">1,212,500</td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium">Youth &amp; Children Programs</td>
+                        <td class="px-6 py-4 text-right">850,000</td>
+                        <td class="px-6 py-4 text-right">970,000</td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium">Worship &amp; Music</td>
+                        <td class="px-6 py-4 text-right">637,500</td>
+                        <td class="px-6 py-4 text-right">727,500</td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-6 py-4 font-medium">Operations</td>
+                        <td class="px-6 py-4 text-right">425,000</td>
+                        <td class="px-6 py-4 text-right">485,000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-bold text-forest-dark">Total Disbursed</td>
+                        <td class="px-6 py-4 text-right font-bold text-forest-dark">4,250,000</td>
+                        <td class="px-6 py-4 text-right font-bold text-forest-dark">4,850,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-xs text-charcoal/50 text-center mt-4">* Figures are in Ethiopian Birr (ETB). Full audited financial reports are available upon request at the church office. 2025 figures are year-to-date projections.</p>
+    </div>
+</section>
+
+<!-- TESTIMONIES OF GIVING -->
+<section class="py-16 md:py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6">Testimonies of Giving</h2>
+            <p class="text-charcoal/60 mt-8">Hear from members of our church family about how the practice of generous giving has blessed their lives and deepened their faith.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 fade-in">
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card relative">
+                <div class="absolute top-6 right-6 text-5xl text-forest/10 font-heading leading-none">"</div>
+                <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center text-white font-bold mb-4">BK</div>
+                <p class="text-charcoal/70 text-sm leading-relaxed mb-6 italic">
+                    "When I first started tithing, I was afraid I wouldn't have enough for my family's needs. But God proved Himself faithful over and over again. Within a year of consistent giving, I received a promotion at work that I had been praying for. I truly believe that when we honor God with our finances, He opens doors we never thought possible."
+                </p>
+                <div class="border-t border-forest/10 pt-4">
+                    <h4 class="font-heading font-bold text-forest-dark text-sm">Belayneh Kassa</h4>
+                    <p class="text-xs text-charcoal/50">Member since 2015</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card relative">
+                <div class="absolute top-6 right-6 text-5xl text-forest/10 font-heading leading-none">"</div>
+                <div class="w-12 h-12 bg-terracotta rounded-full flex items-center justify-center text-white font-bold mb-4">FM</div>
+                <p class="text-charcoal/70 text-sm leading-relaxed mb-6 italic">
+                    "Giving has transformed my heart more than I ever expected. I used to be anxious about money, always worried about whether I would have enough. But as I learned to trust God through giving, that anxiety was replaced with a deep peace. I have seen my family blessed, my business grow, and most importantly, my faith has deepened tremendously."
+                </p>
+                <div class="border-t border-forest/10 pt-4">
+                    <h4 class="font-heading font-bold text-forest-dark text-sm">Feven Mekonnen</h4>
+                    <p class="text-xs text-charcoal/50">Member since 2018</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-md church-card relative">
+                <div class="absolute top-6 right-6 text-5xl text-forest/10 font-heading leading-none">"</div>
+                <div class="w-12 h-12 bg-gold-dark rounded-full flex items-center justify-center text-white font-bold mb-4">TG</div>
+                <p class="text-charcoal/70 text-sm leading-relaxed mb-6 italic">
+                    "As a university student, I didn't think I had anything to give. But our pastor taught us that giving is not about the amount but the heart. I started giving a small amount every month, and I have been amazed at how God has multiplied what little I have. I am more blessed now with less money and more faith than I ever was before."
+                </p>
+                <div class="border-t border-forest/10 pt-4">
+                    <h4 class="font-heading font-bold text-forest-dark text-sm">Tigist Girma</h4>
+                    <p class="text-xs text-charcoal/50">Youth Ministry Member</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TAX DEDUCTIBLE RECEIPTS -->
+<section class="py-12 md:py-16 bg-forest-dark text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i data-lucide="file-text" class="w-6 h-6 text-gold"></i>
+            </div>
+            <div>
+                <h3 class="font-heading text-xl font-bold text-gold mb-3">Tax Deductible Receipts</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-3">
+                    All donations to Jimma Hiwot Berhan Church are eligible for tax deduction under Ethiopian law. If you would like to receive an official donation receipt for tax purposes, please visit the church office during business hours (Monday-Saturday, 8:00 AM - 5:00 PM) with your identification and details of your contributions.
+                </p>
+                <p class="text-white/70 text-sm leading-relaxed">
+                    Annual contribution statements are mailed to all regular givers in January of each year. If you have not received yours or need an additional copy, please contact our finance office at <span class="text-gold">finance@hiwotberhan.org</span> or call <span class="text-gold">+251 47 111 2233</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-4 fade-in">
+            <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4">What is the difference between a tithe and an offering?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed">A tithe is the practice of giving the first 10% of your income back to God as an act of obedience and worship (Leviticus 27:30, Proverbs 3:9-10). An offering is any gift given above and beyond the tithe, often given in response to a specific need, a special occasion, or as a voluntary expression of gratitude. Both are biblical and both are acts of worship that honor God and support the work of the church.</div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4">Is my donation tax-deductible?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed">Yes, donations to Jimma Hiwot Berhan Church are tax-deductible under Ethiopian law. We issue official donation receipts upon request. Visit the church office with your identification to obtain a receipt, or contact us at finance@hiwotberhan.org. Annual contribution summaries are sent to all registered givers each January.</div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4">How is the church's finances managed and audited?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed">Our finances are managed by a dedicated Finance Committee made up of church elders, deacons, and members with professional accounting experience. All funds are handled according to strict financial policies and procedures. The church undergoes an annual external audit by a licensed auditing firm, and a summary report is presented to the congregation at our annual general meeting. We are committed to the highest standards of financial integrity and transparency.</div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4">Can I designate my giving to a specific ministry or project?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed">Yes, you can designate your gift to a specific ministry (Youth, Women, Outreach, etc.) or project (Building Fund, Community Center, Scholarship Fund, etc.). Simply indicate your designation on the offering envelope or include a note with your bank or mobile transfer. Please note that designated gifts will be used exclusively for the specified purpose unless circumstances make it impractical, in which case the church leadership will communicate with the donor about alternative use.</div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4">I want to give but I am struggling financially. What should I do?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed">We understand that financial seasons vary, and we never want anyone to give out of guilt or pressure. Giving is meant to be a joyful act of worship, not a burden. If you are going through a difficult financial season, we encourage you to focus on trusting God with your situation and give according to what you are able, not what you feel pressured to give. If you need practical financial assistance, please speak with our pastoral team — we are here to support you in prayer and through our deacon's benevolence fund.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- FOOTER -->
+    <footer class="footer-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4 group">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">A place of worship, hope, and community in
+                        Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank"
+                            rel="noopener noreferrer" title="Facebook"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg></a>
+                        <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer"
+                            title="YouTube"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                        <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg></a>
+                        <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer"
+                            title="TikTok"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                    </div>
+                </div>
+        <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                <ul class="space-y-2 text-sm text-white/60">
+                    <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>Jimma Town, Oromia, Ethiopia</li>
+                    <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                    <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>info@hiwotberhan.org</li>
+                </ul>
+            </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+                <p>&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+                <p class="font-heading italic text-gold/60" data-i18n="footer_verse">"For where two or three gather in my name, there am I with them." — Matthew 18:20</p>
+            </div>
+        
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+    </footer>
+    <div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center modal-overlay">
+        <div class="relative w-full max-w-3xl mx-4">
+            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gold"><i data-lucide="x" class="w-8 h-8"></i></button>
+            <div class="bg-black rounded-xl overflow-hidden aspect-video"><iframe id="video-iframe" class="w-full h-full" frameborder="0" allowfullscreen allow="autoplay"></iframe></div>
+        </div>
+    </div>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

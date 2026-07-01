@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Jimma Hiwot Berhan Church</title>
+    <meta name="description"
+        content="Learn about the history, mission, vision, leadership, and statement of faith of Jimma Hiwot Berhan Church. Serving the community since 1991.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                        gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                        terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                        ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                        charcoal: '#2D2D2D',
+                    },
+                    fontFamily: { heading: ['Playfair Display', 'Georgia', 'serif'], body: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-body text-charcoal bg-ivory">
+    <!-- Background Decoration -->
+    <div class="bg-texture"></div>
+    <div class="bg-pattern"></div>
+
+
+        <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px] active" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px]" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px]" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold active" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero relative bg-forest-dark pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+        <div class="absolute inset-0 z-0 text-center">
+            <img src="../images/photo_2026-04-07_13-03-36.jpg" alt="About Hero"
+                class="w-full h-full object-cover opacity-30 animate-slow-zoom">
+            <div class="page-hero-overlay absolute inset-0 z-10"></div>
+        </div>
+        <div class="relative z-20 max-w-4xl mx-auto px-4 text-center">
+            <nav class="breadcrumb text-sm mb-4">
+                <a href="index.html" data-i18n="nav_home">Home</a> <span class="text-white/40 mx-2">/</span> <span
+                    class="text-white/60" data-i18n="nav_about">About</span>
+            </nav>
+            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-i18n="about_hero_title">About Our Church</h1>
+            <p class="text-xl text-white/70 max-w-2xl mx-auto font-light leading-relaxed" data-i18n="about_hero_subtitle">Discover the story, faith, and
+                people that make Jimma Hiwot Berhan Church a place of light and life in Jimma, Ethiopia.</p>
+        </div>
+    </section>
+
+    <!-- ==================== WHO WE ARE ==================== -->
+    <section class="py-16 md:py-24 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center fade-in">
+                <div>
+                    <h2
+                        class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title section-title-left mb-8" data-i18n="about_who_title">Who We Are</h2>
+                    <div class="content-section text-charcoal/70 space-y-4">
+                        <p data-i18n="about_who_p1">
+                            Jimma Hiwot Berhan Church, which translates to "Light of Life Church," was founded in 1948
+                            E.C (1956 G.C.) by Pastor Tesfaye Hailu and a small group of devoted believers who shared a
+                            vision of establishing a Christ-centered community in the heart of Jimma, Oromia, Ethiopia.
+                            What began as a humble gathering of just twelve people has grown, by God's grace, into a
+                            thriving congregation of over 2,500 members.
+                        </p>
+                        <p data-i18n="about_who_p2">
+                            For over 70 years, Jimma Hiwot Berhan Church has been a spiritual home for people from all
+                            walks of life — students, families, business owners, farmers, and professionals — united by
+                            a common faith in Jesus Christ and a commitment to loving God and loving others. Our name
+                            reflects our deep conviction that Jesus Christ is the Light of Life (John 8:12), and we are
+                            called to reflect that light in our community.
+                        </p>
+                        <p data-i18n="about_who_p3">
+                            Today, our church is more than just a place of Sunday worship. We are a vibrant,
+                            multi-generational community that gathers throughout the week for prayer, Bible study, youth
+                            activities, women's fellowships, men's meetings, music rehearsals, and community outreach.
+                            We have built strong partnerships with local schools, health clinics, and charitable
+                            organizations to make a tangible difference in the lives of those around us.
+                        </p>
+                        <p data-i18n="about_who_p4">
+                            Our story is not one of buildings and programs, but of transformed lives. We have seen
+                            marriages restored, addictions broken, young people finding their purpose, and the hopeless
+                            finding renewed faith. Every testimony in our church is a testament to the faithfulness of
+                            God and the power of the Gospel. As we look to the future, we remain committed to our
+                            founding vision: to be a beacon of hope, a school of discipleship, and a force for good in
+                            Jimma and beyond.
+                        </p>
+                    </div>
+                </div>
+                <!-- Dynamic Media space -->
+                <div class="relative group fade-in">
+                    <div
+                        class="absolute -inset-4 bg-gold/5 rounded-[2.5rem] -rotate-3 transform transition-transform group-hover:rotate-0 -z-10 bg-gradient-to-tr from-gold/10 to-transparent">
+                    </div>
+                    <div
+                        class="relative bg-forest-dark rounded-[2.5rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(26,86,50,0.3)] border border-forest/10">
+                        <img src="../images/photo_2026-04-07_13-03-31.jpg" alt="Jimma Hiwot Berhan Church"
+                            class="w-full h-[32rem] object-cover opacity-80 transition-transform duration-1000 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-forest-dark/90 via-forest-dark/20 to-transparent opacity-60 transition-opacity">
+                        </div>
+
+                        <!-- Pulsing Video Indicator Area -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')"
+                                class="group/play relative w-24 h-24 flex items-center justify-center transition-transform hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gold/90 rounded-full blur-xl group-hover/play:blur-2xl transition-all">
+                                </div>
+                                <div class="absolute inset-0 bg-gold rounded-full shadow-2xl"></div>
+                                <div
+                                    class="absolute inset-[-15px] border-2 border-gold/30 rounded-full animate-ping-slow">
+                                </div>
+                                <i data-lucide="play"
+                                    class="w-8 h-8 text-forest-dark relative z-10 fill-current ml-1"></i>
+                            </button>
+                        </div>
+
+                        <!-- Content overlay for about media space -->
+                        <div
+                            class="absolute bottom-10 left-10 right-10 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <p class="text-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-3" data-i18n="about_sanctuary_label">Our Sanctuary</p>
+                            <h4 class="text-white text-2xl font-bold font-heading mb-2" data-i18n="about_sanctuary_title">Jimma Main Campus</h4>
+                            <p class="text-white/60 text-sm italic" data-i18n="about_sanctuary_sub">"A place where history meets transformation."</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating est badge with animation space -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white text-forest-dark rounded-2xl p-8 shadow-2xl max-w-xs border border-forest/5 transform transition-transform hover:translate-y-[-8px] z-30">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-forest/10 rounded-xl flex items-center justify-center">
+                                <i data-lucide="flame" class="w-6 h-6 text-forest"></i>
+                            </div>
+                            <div class="font-heading text-4xl font-bold text-forest">1948</div>
+                        </div>
+                        <div class="h-1 w-12 bg-gold mb-3 rounded-full"></div>
+                        <p class="text-sm font-semibold leading-relaxed tracking-wide" data-i18n="about_years_badge">Over <span class="text-gold-dark">70 Years</span> of faithful service in Ethiopia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LEGACY IN MOTION (FEATURED VIDEO) ==================== -->
+    <section class="py-20 md:py-28 bg-forest shadow-inner relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-gold rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Video Thumbnail / Space -->
+                <div class="order-2 lg:order-1 relative group fade-in">
+                    <div
+                        class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-gold/30 transition-all duration-500">
+                        <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Legacy Video Thumbnail"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')"
+                                class="group/btn relative w-20 h-20 flex items-center justify-center">
+                                <div
+                                    class="absolute inset-0 bg-gold rounded-full animate-pulse transition-transform group-hover/btn:scale-110">
+                                </div>
+                                <i data-lucide="play"
+                                    class="w-8 h-8 text-forest-dark fill-current relative z-10 ml-1"></i>
+                            </button>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div
+                            class="absolute top-6 left-6 px-4 py-2 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest" data-i18n="about_legacy_label">
+                            Historical Archives
+                        </div>
+                    </div>
+                    <!-- Decorative Frame Underneath -->
+                    <div
+                        class="absolute -inset-4 border border-white/5 rounded-[2.5rem] pointer-events-none -z-10 translate-x-3 translate-y-3">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="order-1 lg:order-2 fade-in">
+                    <div
+                        class="inline-flex items-center gap-3 px-4 py-1.5 bg-white/10 rounded-full border border-white/20 mb-6">
+                        <span class="w-2 h-2 bg-gold rounded-full"></span>
+                        <span class="text-white/80 text-[10px] font-bold uppercase tracking-widest" data-i18n="about_watch_story">Watch Our
+                            Story</span>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight" data-i18n="about_legacy_title">The Legacy of
+                        <span class="text-gold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                    </h2>
+                    <p class="text-white/60 text-lg leading-relaxed mb-8" data-i18n="about_legacy_text">
+                        Step back in time through our exclusive historical footage. From the early gatherings in the
+                        1950s to the construction of our modern sanctuary, witness the miracles that built this church.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <div class="flex flex-col">
+                            <span class="text-gold font-bold text-2xl" data-i18n="stats_years">70+</span>
+                            <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest" data-i18n="about_yrs_video">Years of
+                                Video</span>
+                        </div>
+                        <div class="w-px h-10 bg-white/10"></div>
+                        <div class="flex flex-col">
+                            <span class="text-gold font-bold text-2xl">4K</span>
+                            <span
+                                class="text-white/40 text-[10px] font-bold uppercase tracking-widest" data-i18n="tag_remastered">Remastered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== OUR MISSION ==================== -->
+    <section class="py-16 md:py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="mission_title">Our Mission</h2>
+                <p class="text-charcoal/70 mt-8 leading-relaxed" data-i18n="mission_text">
+                    Our mission is to glorify God by making disciples of Jesus Christ who worship Him wholeheartedly,
+                    grow in His Word, fellowship in love, and serve their community and the world.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16 fade-in">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-forest/5 rounded-[2.5rem] rotate-2 transform group-hover:rotate-0 transition-transform -z-10"></div>
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-video bg-forest-dark">
+                        <img src="../images/photo_2025-01-14_11-10-47.jpg" alt="Mission in Action" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-dark/50 to-transparent"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-forest-dark shadow-xl hover:scale-110 transition-transform">
+                                <i data-lucide="play" class="w-6 h-6 fill-current ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-forest/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="church" class="w-6 h-6 text-forest"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-forest-dark mb-2" data-i18n="mission_worship_title">Wholehearted Worship</h4>
+                            <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="mission_worship_text">We create spaces where people encounter God's presence through rich Ethiopian traditions and contemporary expressions.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="book-open" class="w-6 h-6 text-gold-dark"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-forest-dark mb-2" data-i18n="mission_discipleship_title">Rooted Discipleship</h4>
+                            <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="mission_discipleship_text">We equip every believer to live out their faith through systematic Bible study and leadership development.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-terracotta/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="globe" class="w-6 h-6 text-terracotta"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-forest-dark mb-2" data-i18n="mission_outreach_title">Compassionate Outreach</h4>
+                            <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="mission_outreach_text">We serve as the hands and feet of Jesus through health fairs, food drives, and prison ministries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR VISION ==================== -->
+    <section class="py-16 md:py-24 bg-forest-dark text-white relative overflow-hidden">
+        <!-- Decorative grid overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center fade-in">
+                <div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gold section-title section-title-left mb-8" data-i18n="vision_title">Our Vision for the Next 10 Years</h2>
+                    <p class="text-white/80 leading-relaxed mb-8 text-lg" data-i18n="vision_text">
+                        We envision a church that is a lighthouse of hope and transformation in Jimma and the
+                        broader Oromia region. Our 2035 strategy focuses on sustainable community impact.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="group bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all">
+                            <i data-lucide="church" class="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                            <h4 class="font-bold text-white mb-2" data-i18n="vision_plants_title">10+ New Plants</h4>
+                            <p class="text-white/60 text-xs" data-i18n="vision_plants_text">Expanding our reach to neighboring towns.</p>
+                        </div>
+                        <div class="group bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all">
+                            <i data-lucide="graduation-cap" class="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                            <h4 class="font-bold text-white mb-2" data-i18n="vision_academy_title">Leadership Academy</h4>
+                            <p class="text-white/60 text-xs" data-i18n="vision_academy_text">Training 100+ youth leaders for the future.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Vision Video Space -->
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-video relative group">
+                        <img src="../images/photo_2026-04-08_12-42-30.jpg" alt="Building the Future" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
+                            <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="w-20 h-20 bg-ivory text-forest-dark rounded-full flex items-center justify-center mb-4 shadow-2xl hover:bg-gold transition-colors">
+                                <i data-lucide="play" class="w-8 h-8 fill-current ml-1"></i>
+                            </button>
+                            <h4 class="text-gold font-bold uppercase tracking-widest text-sm" data-i18n="strategic_roadmap">Strategic Roadmap</h4>
+                            <p class="text-white/80 text-xs italic">"Building the Kingdom, One Life at a Time"</p>
+                        </div>
+                    </div>
+                    <!-- Floating stat -->
+                    <div class="absolute -bottom-6 -right-6 bg-gold text-forest-dark p-6 rounded-2xl shadow-2xl hidden md:block animate-bounce-slow">
+                        <div class="text-3xl font-bold font-heading">5,000+</div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest" data-i18n="about_lives_impacted">Lives Impacted Yearly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR VALUES ==================== -->
+    <section class="py-16 md:py-24 bg-ivory-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="about_values_title">Our Core
+                    Values</h2>
+                <p class="text-charcoal/60 mt-8" data-i18n="about_values_subtitle">These six core values guide every decision, program, and relationship
+                    at Jimma Hiwot Berhan Church.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-forest"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_faith_title">Faith</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_faith_text">
+                        We believe in the power of faith — faith in God who is able to do immeasurably more than all we
+                        ask or imagine. We trust His Word, rely on His promises, and step out boldly in obedience,
+                        knowing that He who began a good work in us will carry it to completion.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-terracotta/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="heart" class="w-7 h-7 text-terracotta"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_love_title">Love</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_love_text">
+                        Love is the greatest commandment and the defining mark of a follower of Christ. We strive to
+                        love God with all our heart, soul, mind, and strength, and to love our neighbors as ourselves —
+                        sacrificially, unconditionally, and without prejudice.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="link" class="w-7 h-7 text-gold-dark"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_unity_title">Unity</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_unity_text">
+                        We are one body with many parts, called to live in harmony and mutual respect. We celebrate our
+                        diversity in age, background, and gifts while maintaining the unity of the Spirit through the
+                        bond of peace. Together we are stronger.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-forest-light/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="hand-helping" class="w-7 h-7 text-forest-light"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_service_title">Service</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_service_text">
+                        Jesus came not to be served, but to serve. Following His example, we view service as a privilege
+                        and a calling. Whether within the church or in the wider community, we look for opportunities to
+                        use our time, talents, and resources to bless others in the name of Christ.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-forest/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="award" class="w-7 h-7 text-forest"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_excellence_title">Excellence</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_excellence_text">
+                        Whatever we do, we do it as unto the Lord. We pursue excellence not for recognition, but as an
+                        expression of our reverence for God and our respect for those we serve. From worship to
+                        administration, we are committed to giving our very best.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md church-card">
+                    <div class="w-14 h-14 bg-gold-dark/10 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="scale" class="w-7 h-7 text-gold-dark"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-forest-dark mb-3" data-i18n="val_integrity_title">Integrity</h3>
+                    <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="val_integrity_text">
+                        We are committed to honesty, transparency, and accountability in all that we do. Our words match
+                        our actions, and we handle God's resources and the trust placed in us with the utmost care and
+                        responsibility. Integrity is the foundation of our witness.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR LEADERSHIP ==================== -->
+    <section class="py-16 md:py-24 bg-white relative overflow-hidden">
+        <!-- Background decorative text -->
+        <div class="absolute top-10 left-0 text-[10rem] font-bold text-forest/[0.02] -rotate-12 pointer-events-none select-none" data-i18n="shepherds_bg">SHEPHERDS</div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="about_leadership_title">Our
+                    Leadership</h2>
+                <p class="text-charcoal/60 mt-8" data-i18n="about_leadership_subtitle">Our pastoral team is dedicated to shepherding the flock with wisdom,
+                    compassion, and a deep love for God's Word.
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 fade-in">
+                <!-- Senior Pastor -->
+                <div class="group bg-ivory rounded-3xl overflow-hidden shadow-xl church-card flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../images/photo_2026-04-08_12-37-51.jpg" alt="Abraham Tadesse" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-forest-dark px-6 flex items-end pb-4">
+                            <span class="text-white font-bold text-lg" data-i18n="pastor_abraham">Abraham Tadesse</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-gold-dark font-bold text-[10px] uppercase tracking-widest mb-3" data-i18n="lead_title_senior">Senior Pastor</p>
+                        <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="lead_desc_senior">
+                            Leading since 2015 with a Master of Divinity and a heart for expository preaching.
+                        </p>
+                    </div>
+                </div>
+                <!-- Associate Pastor -->
+                <div class="group bg-ivory rounded-3xl overflow-hidden shadow-xl church-card flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../images/photo_2026-04-08_12-32-15.jpg" alt="Samuel Kebede" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gold-dark px-6 flex items-end pb-4">
+                            <span class="text-white font-bold text-lg" data-i18n="pastor_samuel">Samuel Kebede</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-gold-dark font-bold text-[10px] uppercase tracking-widest mb-3" data-i18n="lead_title_assoc">Associate Pastor</p>
+                        <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="lead_desc_assoc">
+                            Overseeing discipleship and small group ministries with practical biblical teaching.
+                        </p>
+                    </div>
+                </div>
+                <!-- Youth Pastor -->
+                <div class="group bg-ivory rounded-3xl overflow-hidden shadow-xl church-card flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../images/photo_2026-04-08_12-31-20.jpg" alt="Daniel Hailu" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-terracotta px-6 flex items-end pb-4">
+                            <span class="text-white font-bold text-lg" data-i18n="pastor_daniel">Daniel Hailu</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-terracotta font-bold text-[10px] uppercase tracking-widest mb-3" data-i18n="lead_title_youth">Youth Pastor</p>
+                        <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="lead_desc_youth">
+                            Connecting with the next generation through dynamic worship and relevant truth.
+                        </p>
+                        <!-- Video Button -->
+                        <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="text-xs font-bold text-terracotta flex items-center gap-2 hover:translate-x-1 transition-transform">
+                            <i data-lucide="play-circle" class="w-4 h-4"></i> <span data-i18n="lead_meet_youth">Meet Pastor Daniel</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Women's Leader -->
+                <div class="group bg-ivory rounded-3xl overflow-hidden shadow-xl church-card flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../images/photo_2026-04-08_12-23-45.jpg" alt="Ruth Tesfaye" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-forest-light px-6 flex items-end pb-4">
+                            <span class="text-white font-bold text-lg" data-i18n="pastor_ruth">Ruth Tesfaye</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <p class="text-forest-light font-bold text-[10px] uppercase tracking-widest mb-3" data-i18n="lead_title_women">Women's Leader</p>
+                        <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="lead_desc_women">
+                            Inspiring depth of prayer and spiritual formation among the women of Jimma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HISTORY TIMELINE ==================== -->
+    <section class="py-16 md:py-24 bg-ivory-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="about_history_title">Our History
+                    Timeline</h2>
+                <p class="text-charcoal/60 mt-8" data-i18n="about_history_subtitle">A journey of faith, growth, and God's faithfulness through the decades.
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto fade-in">
+                <div class="relative pl-14">
+                    <div class="timeline-line"></div>
+                    <!-- 1991 -->
+                    <div class="relative mb-16 fade-in">
+                        <div
+                            class="absolute -left-14 w-12 h-12 bg-forest rounded-xl flex items-center justify-center shadow-lg z-10">
+                            <span class="text-gold font-bold text-sm">1948</span>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md ml-4 flex flex-col md:flex-row gap-6 transform hover:scale-[1.01] transition-all duration-500">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                                <img src="../images/photo_2026-04-08_12-40-12.jpg" alt="Church Founding" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6 flex flex-col justify-center">
+                                <h3 class="font-heading text-xl font-bold text-forest-dark mb-2" data-i18n="history_start_title">The Church is Founded (1948 E.C.)</h3>
+                                <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="history_start_text">
+                                    Pastor Tesfaye Hailu, together with a small group of believers, held the first worship
+                                    service seventy years ago (1948 E.C.) in Jimma. What began as a humble gathering has
+                                    grown through God's faithfulness into a thriving community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1998 -->
+                    <div class="relative mb-16">
+                        <div
+                            class="absolute -left-14 w-12 h-12 bg-gold-dark rounded-xl flex items-center justify-center shadow-lg z-10">
+                            <span class="text-white font-bold text-sm">1998</span>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md ml-4 flex flex-col md:flex-row-reverse gap-6 transform hover:scale-[1.01] transition-all duration-500">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                                <img src="../images/photo_2026-04-07_13-03-36.jpg" alt="First Building" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6 flex flex-col justify-center text-right md:text-left">
+                                <h3 class="font-heading text-xl font-bold text-forest-dark mb-2" data-i18n="hist_1998_title">First Church Building</h3>
+                                <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="hist_1998_text">
+                                    After years of faithful giving and sacrificial contributions from the congregation,
+                                    Jimma Hiwot Berhan Church purchased its first piece of land and constructed a modest but
+                                    beautiful church building. The dedication service was attended by over 300 members and guests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2005 -->
+                    <div class="relative mb-16">
+                        <div
+                            class="absolute -left-14 w-12 h-12 bg-terracotta rounded-xl flex items-center justify-center shadow-lg z-10">
+                            <span class="text-white font-bold text-sm">2005</span>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md ml-4 flex flex-col md:flex-row gap-6 transform hover:scale-[1.01] transition-all duration-500">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                                <img src="../images/photo_2026-04-08_12-32-15.jpg" alt="Youth Ministry" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6 flex flex-col justify-center">
+                                <h3 class="font-heading text-xl font-bold text-forest-dark mb-2" data-i18n="hist_2005_title">Youth Ministry Launch</h3>
+                                <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="hist_2005_text">
+                                    Recognizing the need to invest in the next generation, we officially launched
+                                    the Youth Ministry. Starting with 25 young people, it quickly grew through dynamic worship services, sports activities, and mentorship programs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2012 -->
+                    <div class="relative mb-16">
+                        <div
+                            class="absolute -left-14 w-12 h-12 bg-forest-light rounded-xl flex items-center justify-center shadow-lg z-10">
+                            <span class="text-white font-bold text-sm">2012</span>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md ml-4 flex flex-col md:flex-row-reverse gap-6 transform hover:scale-[1.01] transition-all duration-500">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                                <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Expansion" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6 flex flex-col justify-center text-right md:text-left">
+                                <h3 class="font-heading text-xl font-bold text-forest-dark mb-2" data-i18n="hist_2012_title">Major Church Expansion</h3>
+                                <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="hist_2012_text">
+                                    With the congregation growing, we embarked on a major expansion. The new facility included a larger sanctuary seating 1,500, a dedicated youth hall, children's classrooms, and administrative offices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2020 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-14 w-12 h-12 bg-gold rounded-xl flex items-center justify-center shadow-lg z-10">
+                            <span class="text-forest-dark font-bold text-sm">2020</span>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md ml-4 flex flex-col md:flex-row gap-6 transform hover:scale-[1.01] transition-all duration-500">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                                <img src="../images/photo_2026-04-07_13-03-31.jpg" alt="Community Center" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6 flex flex-col justify-center">
+                                <h3 class="font-heading text-xl font-bold text-forest-dark mb-2" data-i18n="hist_2020_title">Community Center Opened</h3>
+                                <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="hist_2020_text">
+                                    We opened our Community Center, fulfilling a long-held dream. The center provides tutoring for underprivileged children, vocational training, a health clinic, and a food bank serving over 200 families.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATEMENT OF FAITH ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6">Statement of
+                    Faith</h2>
+                <p class="text-charcoal/60 mt-8">We hold to the essential truths of the Christian faith as revealed in
+                    the Bible. These beliefs form the foundation of our teaching, worship, and community life.</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4 fade-in">
+                <!-- The Bible -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-forest/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="book-open" class="w-5 h-5 text-forest"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_bible_title">The Bible</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_bible_text">
+                            We believe the Bible is the inspired, infallible, and authoritative Word of God. It is
+                            without error in all it affirms and is the supreme and final authority in all matters of
+                            faith and conduct. We believe that God has preserved His Word through the centuries and that
+                            it is relevant and powerful for every generation. Scripture alone is our ultimate guide for
+                            faith and practice.
+                        </div>
+                    </div>
+                </div>
+                <!-- God -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="sparkles" class="w-5 h-5 text-gold-dark"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_god_title">God</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_god_text">
+                            We believe in one God, eternally existing in three Persons — Father, Son, and Holy Spirit.
+                            God is the Creator and Sustainer of all things, infinite in power, wisdom, and goodness. He
+                            is holy, righteous, loving, and faithful. He is sovereign over all creation and is working
+                            all things together for the good of those who love Him and are called according to His
+                            purpose.
+                        </div>
+                    </div>
+                </div>
+                <!-- Jesus Christ -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-terracotta/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="cross" class="w-5 h-5 text-terracotta"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_jesus_title">Jesus Christ</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_jesus_text">
+                            We believe in the deity of the Lord Jesus Christ — His virgin birth, His sinless life, His
+                            miracles, His atoning death on the cross, His bodily resurrection, His ascension to the
+                            right hand of the Father, and His personal return in power and glory. Jesus Christ is the
+                            only mediator between God and humanity, and salvation is found in Him alone. He is the Way,
+                            the Truth, and the Life.
+                        </div>
+                    </div>
+                </div>
+                <!-- Holy Spirit -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-forest-light/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="wind" class="w-5 h-5 text-forest-light"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_spirit_title">Holy Spirit</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_spirit_text">
+                            We believe in the present ministry of the Holy Spirit, by whose indwelling the Christian is
+                            enabled to live a godly life. The Holy Spirit convicts the world of sin, righteousness, and
+                            judgment; regenerates and baptizes believers into the body of Christ; seals them for the day
+                            of redemption; empowers them for service; and produces spiritual fruit in their lives. We
+                            believe in the ongoing work of the Spirit through spiritual gifts for the edification of the
+                            church.
+                        </div>
+                    </div>
+                </div>
+                <!-- Salvation -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gold-dark/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="life-buoy" class="w-5 h-5 text-gold-dark"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_salvation_title">Salvation</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_salvation_text">
+                            We believe that salvation is a gift of God received by faith alone in Jesus Christ alone.
+                            All people have sinned and fall short of God's glory. Through the death and resurrection of
+                            Jesus Christ, God provided the way of salvation. Those who repent of their sins and trust in
+                            Christ as Lord and Savior are forgiven, declared righteous, adopted into God's family, and
+                            given eternal life. This salvation is entirely by God's grace, not by human effort.
+                        </div>
+                    </div>
+                </div>
+                <!-- The Church -->
+                <div class="bg-ivory rounded-xl overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-forest/10 rounded-lg flex items-center justify-center"><i
+                                    data-lucide="church" class="w-5 h-5 text-forest"></i></div>
+                            <h3 class="font-heading text-lg font-bold text-forest-dark" data-i18n="faith_church_title">The Church</h3>
+                        </div>
+                        <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faith_church_text">
+                            We believe the Church is the body of Christ, composed of all born-again believers regardless
+                            of race, ethnicity, or social status. The local church is God's primary instrument for
+                            worship, evangelism, discipleship, fellowship, and service. We observe two ordinances: water
+                            baptism as a public declaration of faith, and the Lord's Supper as a remembrance of Christ's
+                            sacrifice. We are committed to the unity of the Spirit and the bond of peace.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR COMMUNITY GALLERY (IMAGE SPACE) ==================== -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold text-forest-dark mb-6 tracking-tight" data-i18n="about_gallery_title">Voices of
+                    <span data-i18n="the_sanctuary">the <span class="text-gold italic">Sanctuary</span></span></h2>
+                <p class="text-charcoal/60 text-lg leading-relaxed" data-i18n="about_gallery_subtitle">A visual document of our journey together — every
+                    face represents a story of grace.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 fade-in">
+                <!-- Large Image 1 -->
+                <div
+                    class="col-span-2 row-span-2 group relative rounded-[2rem] overflow-hidden shadow-2xl min-h-[500px]">
+                    <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Choir Celebration"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-forest-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute bottom-10 left-10 p-2 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest mb-2 block">Music
+                            Ministry</span>
+                        <h4 class="text-white text-3xl font-bold font-heading">Songs of Deliverance</h4>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-xl aspect-square">
+                    <img src="../images/church_logo.jpg" alt="Church Detail"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gold/10 group-hover:bg-transparent transition-colors"></div>
+                </div>
+
+                <!-- Image 3 (Video) -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-xl aspect-square cursor-pointer">
+                    <img src="../images/photo_2026-04-08_12-45-33.jpg" alt="Video Slice"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-forest-dark/40 group-hover:bg-forest-dark/20 transition-colors">
+                        <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')"
+                            class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-2xl transform transition-transform group-hover:scale-110">
+                            <i data-lucide="play" class="w-6 h-6 text-forest-dark fill-current ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-span-2 group relative rounded-3xl overflow-hidden shadow-lg h-[250px]">
+                    <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Congregation"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-forest/20 group-hover:bg-transparent transition-colors"></div>
+                    <div
+                        class="absolute bottom-6 right-6 px-4 py-2 bg-white/90 backdrop-blur-md rounded-xl text-forest text-[10px] font-bold uppercase tracking-widest shadow-lg">
+                        Collective Worship
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- FOOTER -->
+    <footer class="footer-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4 group">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-6" data-i18n="footer_desc">A place of worship, hope, and community in
+                        Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                    <h5 class="text-[10px] font-bold text-gold uppercase tracking-[0.2em] mb-4 opacity-80" data-i18n="social_follow_label">ተከታተሉን • Follow Us Online</h5>
+                    <div class="flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank"
+                            rel="noopener noreferrer" title="Facebook"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg></a>
+                        <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer"
+                            title="YouTube"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                        <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg></a>
+                        <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer"
+                            title="TikTok"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                    <ul class="space-y-2 text-sm text-white/60">
+                        <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                    <ul class="space-y-3 text-sm text-white/60">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin"
+                                class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>Jimma Town, Oromia, Ethiopia</li>
+                        <li class="flex items-start gap-2"><i data-lucide="phone"
+                                class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                        <li class="flex items-start gap-2"><i data-lucide="mail"
+                                class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>info@hiwotberhan.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+                <p data-i18n="footer_rights">&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+                <p class="font-heading italic text-gold/60" data-i18n="footer_verse">"For where two or three gather in my name, there am I with
+                    them." — Matthew 18:20</p>
+            </div>
+        
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+    </footer>
+    <div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center modal-overlay">
+        <div class="relative w-full max-w-3xl mx-4">
+            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gold"><i
+                    data-lucide="x" class="w-8 h-8"></i></button>
+            <div class="bg-black rounded-xl overflow-hidden aspect-video"><iframe id="video-iframe"
+                    class="w-full h-full" frameborder="0" allowfullscreen allow="autoplay"></iframe></div>
+        </div>
+    </div>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

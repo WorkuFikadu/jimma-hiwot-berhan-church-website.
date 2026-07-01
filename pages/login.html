@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login — Jimma Hiwot Berhan Church</title>
+    <meta name="description" content="Login to your member account at Jimma Hiwot Berhan Church. Access sermons, events, and community resources.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                    gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                    terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                    ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                    charcoal: '#2D2D2D',
+                },
+                fontFamily: { heading: ['Playfair Display','Georgia','serif'], body: ['Inter','system-ui','sans-serif'] }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-ivory-dark min-h-screen flex flex-col">
+    <!-- Background Decoration -->
+    <div class="bg-texture"></div>
+    <div class="bg-pattern"></div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px]" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px]" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px]" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-4">
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-forest/5 fade-in visible">
+        <div class="bg-forest-dark p-10 text-center relative overflow-hidden border-b border-gold/10">
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--accent)_0%,_transparent_70%)] opacity-10"></div>
+                <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 L50 0 L100 100 Z" fill="currentColor" fill-opacity="0.05"></path></svg>
+            </div>
+            <div class="relative z-10">
+                <div class="inline-block px-3 py-1 bg-gold/20 backdrop-blur-md border border-gold/30 rounded-full mb-6">
+                    <span class="text-[10px] font-bold text-gold uppercase tracking-[0.3em]" data-i18n="login_system_mgmt">System Management</span>
+                </div>
+                <div class="w-20 h-20 bg-gradient-to-br from-gold to-accent-dark rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-gold/20 transform hover:rotate-12 transition-transform duration-500">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-forest-dark"></i>
+                </div>
+                <h1 class="font-heading text-3xl font-bold text-white mb-2 tracking-tight" data-i18n="login_master_access">Master Access</h1>
+                <p class="text-white/40 text-xs uppercase tracking-widest font-medium" data-i18n="login_portal">Jimma Hiwot Berhan Church Portal</p>
+            </div>
+        </div>
+        
+        <div class="p-8">
+            <form id="login-form" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-bold text-forest-dark uppercase tracking-wider mb-2 ml-1" data-i18n="login_username">Username</label>
+                    <div class="relative">
+                        <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-charcoal/30"></i>
+                        <input type="text" name="username" required placeholder="Enter your username" class="w-full pl-12 pr-4 py-3.5 bg-ivory border border-forest/10 rounded-xl focus:outline-none focus:border-forest-dark focus:ring-4 focus:ring-forest/5 transition-all text-sm">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex items-center justify-between mb-2 ml-1">
+                        <label class="block text-xs font-bold text-forest-dark uppercase tracking-wider" data-i18n="login_password">Password</label>
+                        <a href="#" class="text-xs font-semibold text-gold-dark hover:text-gold" data-i18n="login_forgot">Forgot?</a>
+                    </div>
+                    <div class="relative">
+                        <i data-lucide="lock" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-charcoal/30"></i>
+                        <input type="password" id="password" name="password" required placeholder="••••••••" class="w-full pl-12 pr-12 py-3.5 bg-ivory border border-forest/10 rounded-xl focus:outline-none focus:border-forest-dark focus:ring-4 focus:ring-forest/5 transition-all text-sm">
+                        <button type="button" id="toggle-password" class="absolute right-4 top-1/2 -translate-y-1/2 text-charcoal/30 hover:text-forest transition-colors">
+                            <i data-lucide="eye" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex items-center py-1">
+                    <input type="checkbox" id="remember" class="w-4 h-4 text-forest border-forest/20 rounded focus:ring-forest">
+                    <label for="remember" class="ml-2 text-sm text-charcoal/60" data-i18n="login_remember">Remember me for 30 days</label>
+                </div>
+                
+                <button type="submit" id="login-btn" class="w-full py-4 bg-forest text-white font-bold rounded-xl hover:bg-forest-dark transition-all shadow-lg hover:shadow-forest/20 flex items-center justify-center gap-2 group/btn">
+                    <span data-i18n="btn_initiate_access">Initiate Master Access</span> <i data-lucide="key" class="w-5 h-5 group-hover/btn:rotate-12 transition-transform"></i>
+                </button>
+            </form>
+            
+            <div class="mt-8 pt-6 border-t border-forest/5 text-center">
+                <p class="text-sm text-charcoal/60" data-i18n="login_no_account">Don't have an account yet?</p>
+                <a href="#" class="inline-block mt-2 font-bold text-forest hover:text-forest-dark underline underline-offset-4 decoration-gold" data-i18n="login_apply">Apply for Membership</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer-gradient text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4 group">
+                    <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                        class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed mb-4">A place of worship, hope, and community in
+                    Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank"
+                        rel="noopener noreferrer" title="Facebook"
+                        class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><svg
+                            class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg></a>
+                    <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer"
+                        title="YouTube"
+                        class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><svg
+                            class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg></a>
+                    <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram"
+                        class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><svg
+                            class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg></a>
+                    <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer" title="TikTok"
+                        class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><svg
+                            class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                <ul class="space-y-2 text-sm text-white/60">
+                    <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00
+                        AM</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer
+                    </li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible
+                        Study</li>
+                    <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li class="flex items-start gap-2"><i data-lucide="map-pin"
+                            class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i><span data-i18n="jimma_oromia_ethiopia">Jimma Town, Oromia, Ethiopia</span></li>
+                    <li class="flex items-start gap-2"><i data-lucide="phone"
+                            class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                    <li class="flex items-start gap-2"><i data-lucide="mail"
+                            class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i><span data-i18n="info_email">info@hiwotberhan.org</span></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+            <p>&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+            <p class="font-heading italic text-gold/60">"For where two or three gather in my name, there am I with them."
+                — Matthew 18:20</p>
+        </div>
+    
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('login-form');
+        const btn = document.getElementById('login-btn');
+        const passwordInput = document.getElementById('password');
+        const toggleBtn = document.getElementById('toggle-password');
+
+        if (toggleBtn && passwordInput) {
+            toggleBtn.addEventListener('click', () => {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                
+                // Toggle icon
+                const icon = toggleBtn.querySelector('i');
+                const iconName = type === 'password' ? 'eye' : 'eye-off';
+                icon.setAttribute('data-lucide', iconName);
+                lucide.createIcons();
+            });
+        }
+
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const payload = Object.fromEntries(formData);
+                payload.action = 'login';
+
+                btn.disabled = true;
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i data-lucide="loader" class="w-5 h-5 animate-spin"></i> Authenticating...';
+                lucide.createIcons();
+                
+                try {
+                    const response = await fetch('../api/auth.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        localStorage.setItem('church_admin', 'true');
+                        window.location.href = 'admin.html';
+                    } else {
+                        showToast(result.error || 'Login failed', 'error');
+                        btn.disabled = false;
+                        btn.innerHTML = originalHTML;
+                        lucide.createIcons();
+                    }
+                } catch (error) {
+                    showToast('Connection error. Please try again.', 'error');
+                    btn.disabled = false;
+                    btn.innerHTML = originalHTML;
+                    lucide.createIcons();
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

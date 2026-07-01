@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Jimma Hiwot Berhan Church</title>
+    <meta name="description" content="Get in touch with Jimma Hiwot Berhan Church. Contact us for general inquiries, prayer requests, membership information, or event details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                    gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                    terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                    ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                    charcoal: '#2D2D2D',
+                },
+                fontFamily: { heading: ['Playfair Display','Georgia','serif'], body: ['Inter','system-ui','sans-serif'] }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-ivory">
+<!-- Background Decoration -->
+<div class="bg-texture"></div>
+<div class="bg-pattern"></div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px]" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px]" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px] active" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold active" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero relative bg-forest-dark pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Contact Background" class="w-full h-full object-cover opacity-25 animate-slow-zoom">
+        <div class="page-hero-overlay absolute inset-0 z-10"></div>
+    </div>
+    <div class="relative z-20 max-w-4xl mx-auto px-4 text-center">
+        <nav class="breadcrumb text-sm mb-4">
+            <a href="index.html" data-i18n="nav_home">Home</a> <span class="text-white/40 mx-2">/</span> <span class="text-white/60" data-i18n="nav_contact">Contact</span>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-i18n="contact_hero_title">Contact Us</h1>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto font-light" data-i18n="contact_hero_subtitle">We would love to hear from you. Whether you have a question, a prayer request, or simply want to say hello, we are here for you.</p>
+    </div>
+</section>
+
+<!-- GET IN TOUCH INTRO -->
+<section class="py-12 md:py-16 bg-ivory">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+        <div class="content-section text-charcoal/70 space-y-4">
+            <p data-i18n="contact_intro_p1">
+                At Jimma Hiwot Berhan Church, we believe that genuine relationships are at the heart of a healthy church. We are always delighted to hear from both our church family and those who are exploring faith or visiting for the first time. Whether you need spiritual guidance, practical assistance, information about our services and events, or simply someone to pray with you, our team is ready to help.
+            </p>
+            <p data-i18n="contact_intro_p2">
+                Please use the contact form below to send us a message, and a member of our pastoral or administrative team will respond to you within 48 hours. You can also reach us by phone, email, or by visiting us in person during office hours. We look forward to connecting with you!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT FORM + INFO -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-5 gap-12 fade-in">
+            <!-- CONTACT FORM -->
+            <div class="lg:col-span-3">
+                <h2 class="font-heading text-2xl md:text-3xl font-bold text-forest-dark section-title section-title-left mb-8" data-i18n="contact_form_title">Send Us a Message</h2>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="contact_label_name">Full Name<span class="text-terracotta">*</span></label>
+                            <input type="text" name="name" required placeholder="Enter your full name" data-i18n-placeholder="contact_placeholder_name" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="contact_label_email">Email Address<span class="text-terracotta">*</span></label>
+                            <input type="email" name="email" required placeholder="your@email.com" data-i18n-placeholder="contact_placeholder_email" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="contact_label_phone">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="+251 XX XXX XXXX" data-i18n-placeholder="contact_placeholder_phone" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="contact_label_subject">Subject<span class="text-terracotta">*</span></label>
+                            <select name="subject" required class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                                <option value=" data-i18n="contact_subject_default">Select a subject</option>
+                                <option value="General Inquiry" data-i18n="contact_subject_general">General Inquiry</option>
+                                <option value="Prayer Request" data-i18n="contact_subject_prayer">Prayer Request</option>
+                                <option value="Membership" data-i18n="contact_subject_membership">Membership</option>
+                                <option value="Event Information" data-i18n="contact_subject_events">Event Information</option>
+                                <option value="Feedback" data-i18n="contact_subject_feedback">Feedback</option>
+                                <option value="Other" data-i18n="contact_subject_other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="contact_label_message">Message <span class="text-terracotta">*</span></label>
+                        <textarea name="message" required rows="6" placeholder="Please type your message here..." data-i18n-placeholder="contact_placeholder_message" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory resize-none"></textarea>
+                    </div>
+                    <button type="submit" id="contact-submit" class="inline-flex items-center gap-2 px-8 py-3.5 bg-forest text-white font-semibold rounded-xl hover:bg-forest-light transition-colors text-sm">
+                        <i data-lucide="send" class="w-4 h-4"></i> <span data-i18n="btn_send_message">Send Message</span>
+                    </button>
+                </form>
+            </div>
+            <!-- CONTACT INFO -->
+            <div class="lg:col-span-2">
+                <h2 class="font-heading text-2xl md:text-3xl font-bold text-forest-dark section-title section-title-left mb-8" data-i18n="contact_info_title">Contact Information</h2>
+                <div class="space-y-6">
+                    <div class="bg-ivory rounded-xl p-6 shadow-sm flex items-start gap-4">
+                        <div class="w-12 h-12 bg-forest/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-forest"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="footer_address_title">Address</h3>
+                            <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="church_address_full">Jimma Hiwot Berhan Church<br>Jimma-Bishoftu Road<br data-i18n="contact_jimma_region" data-i18n="contact_jimma_region">Jimma Town, Oromia Region<br>Ethiopia</p>
+                        </div>
+                    </div>
+                    <div class="bg-ivory rounded-xl p-6 shadow-sm flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-6 h-6 text-gold-dark"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="label_phone">Phone</h3>
+                            <p class="text-charcoal/70 text-sm"><span data-i18n="contact_office_phone">Main Office:</span> <a href="tel:+251471112233" class="text-forest hover:underline">+251 47 111 2233</a></p>
+                            <p class="text-charcoal/70 text-sm"><span data-i18n="contact_pastoral_phone">Pastoral Line:</span> <a href="tel:+251471112234" class="text-forest hover:underline">+251 47 111 2234</a></p>
+                            <p class="text-charcoal/70 text-sm mt-1 text-charcoal/50" data-i18n="contact_office_hours_sub">Mon-Sat: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="bg-ivory rounded-xl p-6 shadow-sm flex items-start gap-4">
+                        <div class="w-12 h-12 bg-terracotta/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mail" class="w-6 h-6 text-terracotta"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="label_email">Email</h3>
+                            <p class="text-charcoal/70 text-sm"><span data-i18n="contact_email_general">General:</span> <a href="mailto:info@hiwotberhan.org" class="text-forest hover:underline">info@hiwotberhan.org</a></p>
+                            <p class="text-charcoal/70 text-sm"><span data-i18n="contact_email_prayer">Prayer:</span> <a href="mailto:prayer@hiwotberhan.org" class="text-forest hover:underline">prayer@hiwotberhan.org</a></p>
+                            <p class="text-charcoal/70 text-sm"><span data-i18n="contact_email_events">Events:</span> <a href="mailto:events@hiwotberhan.org" class="text-forest hover:underline">events@hiwotberhan.org</a></p>
+                        </div>
+                    </div>
+                    <div class="bg-ivory rounded-xl p-6 shadow-sm flex items-start gap-4">
+                        <div class="w-12 h-12 bg-forest-light/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="clock" class="w-6 h-6 text-forest-light"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="footer_office_hours_title">Office Hours</h3>
+                            <p class="text-charcoal/70 text-sm" data-i18n="contact_hours_weekday">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p class="text-charcoal/70 text-sm" data-i18n="contact_hours_saturday">Saturday: 9:00 AM - 1:00 PM</p>
+                            <p class="text-charcoal/70 text-sm" data-i18n="contact_hours_sunday">Sunday: Open during services only</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social Media -->
+                <div class="mt-8">
+                    <h3 class="font-heading font-bold text-forest-dark mb-4" data-i18n="social_follow_label">Follow Us</h3>
+                    <div class="flex gap-3">
+                        <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank" rel="noopener noreferrer" class="w-11 h-11 bg-forest/10 rounded-xl flex items-center justify-center hover:bg-forest hover:text-white text-forest transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer" class="w-11 h-11 bg-red-50 rounded-xl flex items-center justify-center hover:bg-red-600 hover:text-white text-red-600 transition-colors">
+                            <i data-lucide="youtube" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" class="w-11 h-11 bg-sky-50 rounded-xl flex items-center justify-center hover:bg-sky-500 hover:text-white text-sky-500 transition-colors">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer" class="w-11 h-11 bg-charcoal/10 rounded-xl flex items-center justify-center hover:bg-charcoal hover:text-white text-charcoal transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" class="w-11 h-11 bg-charcoal/10 rounded-xl flex items-center justify-center hover:bg-[#E1306C] hover:text-white text-charcoal transition-colors"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRAYER REQUEST -->
+<section class="py-16 md:py-24 bg-ivory-dark">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="prayer_form_title">Submit a Prayer Request</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="prayer_form_subtitle">We believe in the power of prayer. Share your prayer request with us, and our dedicated prayer team will lift you up before God. All requests are treated with the utmost confidentiality and care.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg fade-in">
+            <form id="prayer-form" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="prayer_label_name">Your Name<span class="text-terracotta">*</span></label>
+                        <input type="text" name="name" required placeholder="Enter your name" data-i18n-placeholder="prayer_placeholder_name" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="label_email">Email Address</label>
+                        <input type="email" name="email" placeholder="your@email.com (optional)" data-i18n-placeholder="prayer_placeholder_email" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-charcoal mb-2" data-i18n="prayer_label_request">Prayer Request<span class="text-terracotta">*</span></label>
+                    <textarea name="prayer_request" required rows="6" placeholder="Please share your prayer request here. Be as specific or as general as you feel comfortable. Our prayer team will pray for you..." data-i18n-placeholder="prayer_placeholder_request" class="form-input w-full px-4 py-3 border border-forest/20 rounded-xl text-sm bg-ivory resize-none"></textarea>
+                </div>
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" name="confidential" id="confidential" class="mt-1 w-4 h-4 rounded border-forest/20 text-forest focus:ring-forest">
+                    <label for="confidential" class="text-sm text-charcoal/70 cursor-pointer" data-i18n="prayer_confidential_label">
+                        Please keep my request confidential. Only the pastoral team will see this request and it will not be shared with the general prayer team.
+                    </label>
+                </div>
+                <button type="submit" id="prayer-submit" class="inline-flex items-center gap-2 px-8 py-3.5 bg-terracotta text-white font-semibold rounded-xl hover:bg-terracotta-light transition-colors text-sm">
+                    <i data-lucide="heart" class="w-4 h-4"></i> <span data-i18n="btn_submit_prayer">Submit Prayer Request</span>
+                </button>
+            </form>
+            <div class="mt-6 flex items-start gap-3 bg-gold/5 rounded-xl p-4">
+                <i data-lucide="shield-check" class="w-5 h-5 text-gold-dark flex-shrink-0 mt-0.5"></i>
+                <p class="text-xs text-charcoal/60 leading-relaxed" data-i18n="prayer_privacy_note">
+                    Your privacy matters to us. All prayer requests are handled with the highest level of confidentiality. If you checked the confidential option, your request will only be seen by our Senior Pastor and Associate Pastor. Unmarked requests may be shared with our trained intercession team for collective prayer.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FIND US / LOCATION MAP ==================== -->
+<section class="py-20 md:py-28 bg-ivory relative overflow-hidden">
+    <!-- Decorative background blobs -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-forest/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <div class="inline-flex items-center gap-3 px-4 py-2 bg-forest/10 backdrop-blur-md rounded-full border border-forest/20 mb-6">
+                <i data-lucide="map-pin" class="w-4 h-4 text-forest"></i>
+                <span class="text-forest text-[10px] font-bold uppercase tracking-[0.3em]" data-i18n="contact_find_our_church" data-i18n="contact_find_our_church">Find Our Church</span>
+            </div>
+            <h2 class="font-heading text-3xl md:text-5xl font-bold text-forest-dark mb-4 tracking-tight" data-i18n="contact_visit_us" data-i18n="contact_visit_us">Visit Us in Jimma</h2>
+            <div class="ornament-divider mb-6"><span></span><svg class="w-5 h-5 text-gold" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="4"/></svg><span></span></div>
+            <p class="text-charcoal/60 text-lg leading-relaxed">We'd love to welcome you in person. Come find us at our church in Jimma — there's always a warm seat and an open heart waiting for you.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 lg:gap-12 items-stretch fade-in">
+            <!-- Address & Info Cards -->
+            <div class="lg:col-span-2 flex flex-col gap-5">
+                <!-- Address Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest/5 church-card flex items-start gap-4">
+                    <div class="w-12 h-12 bg-forest/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-forest"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-forest-dark mb-1">Our Address</h3>
+                        <p class="text-charcoal/70 text-sm leading-relaxed" data-i18n="contact_jimma_region" data-i18n="contact_jimma_region">Jimma Town, Oromia Region<br>Ethiopia</p>
+                        <a href="https://maps.app.goo.gl/MquDFig7PRvgBVA48" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-1.5 mt-3 text-xs font-bold text-forest hover:text-forest-light transition-colors uppercase tracking-wide">
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i data-i18n="btn_open_maps">Open in Google Maps</a>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest/5 church-card flex items-start gap-4">
+                    <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="phone" class="w-6 h-6 text-gold-dark"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="label_phone">Phone</h3>
+                        <a href="tel:+251471112233" class="text-charcoal/70 text-sm hover:text-forest transition-colors">+251 47 111 2233</a>
+                    </div>
+                </div>
+
+                <!-- Service Times Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest/5 church-card flex items-start gap-4">
+                    <div class="w-12 h-12 bg-terracotta/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="clock" class="w-6 h-6 text-terracotta"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-forest-dark mb-2" data-i18n="service_times_title">Service Times</h3>
+                        <ul class="space-y-1.5 text-sm text-charcoal/70">
+                            <li><span class="font-semibold text-forest-dark" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                            <li><span class="font-semibold text-forest-dark" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                            <li><span class="font-semibold text-forest-dark" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                            <li><span class="font-semibold text-forest-dark" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Get Directions Button -->
+                <a href="https://maps.app.goo.gl/MquDFig7PRvgBVA48" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-3 px-6 py-4 bg-forest text-white font-bold rounded-2xl hover:bg-forest-light transition-all shadow-lg hover:shadow-xl hover:translate-y-[-2px] text-sm">
+                    <i data-lucide="navigation" class="w-5 h-5"></i data-i18n="btn_get_directions">Get Directions</a>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="lg:col-span-3 relative rounded-3xl overflow-hidden shadow-2xl border border-forest/10 min-h-[400px] group">
+                <!-- Decorative corner badge -->
+                <div class="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 bg-white/90 backdrop-blur-md rounded-lg shadow-md border border-forest/10">
+                    <span class="w-2 h-2 bg-forest rounded-full animate-ping"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-forest-dark" data-i18n="church_location">Jimma, Ethiopia</span>
+                </div>
+                <!-- Google Maps iframe -->
+                <iframe
+                    id="church-location-map"
+                    title="Jimma Hiwot Berhan Church Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4772.698015907478!2d36.8375202!3d7.6745585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17adb95c36eab2ff%3A0xa0ea337747359962!2sJimma%20Hiwet%20Birhan%20Church!5e1!3m2!1sen!2set!4v1775643796807!5m2!1sen!2set"
+                    width="100%"
+                    height="100%"
+                    style="min-height: 420px; border: 0; display: block;"
+                    allowfullscreen="
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Hover overlay link to open in full maps -->
+                <a href="https://maps.app.goo.gl/MquDFig7PRvgBVA48" target="_blank" rel="noopener noreferrer"
+                   class="absolute bottom-4 right-4 z-10 flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-forest/10 text-xs font-bold text-forest-dark hover:bg-forest hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> View Larger Map
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-ivory-dark">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="faq_title">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-4 fade-in">
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4" data-i18n="faq_q1">I am visiting for the first time. What should I expect?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faq_a1">Welcome! We are excited to have you visit. When you arrive, our friendly greeters will welcome you at the door and help you find your way. You can stop by the Welcome Desk in the lobby for a special gift and information about the church. During the service, you will enjoy inspiring worship music, biblical teaching, and a warm community atmosphere. We have children's programs available during both Sunday services. Come as you are — there is no dress code. We recommend arriving 15 minutes early to settle in comfortably. For more details, visit our <a href="services.html" class="text-forest hover:underline font-medium">Worship Services page</a>.</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4" data-i18n="faq_q2">How do I become a member of Jimma Hiwot Berhan Church?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faq_a2">We are delighted that you are interested in becoming part of our church family! The membership process involves three steps: First, attend our "New Members' Orientation" class, which is a 4-session course held on Sunday afternoons covering our church's history, beliefs, values, and ministries. Second, meet with one of our pastors for a personal conversation about your faith journey. Third, participate in a membership ceremony during a Sunday service where you are officially welcomed into the congregation. To get started, simply fill out a membership interest card at the Welcome Desk or contact us at <a href="mailto:info@hiwotberhan.org" class="text-forest hover:underline">info@hiwotberhan.org</a>.</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4" data-i18n="faq_q3">Do you offer counseling or pastoral care?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faq_a3">Yes, pastoral care is one of our highest priorities. Our pastoral team is available for counseling, spiritual guidance, and prayer support for individuals, couples, and families. Whether you are facing a personal crisis, marital challenges, grief, or simply need someone to talk to and pray with, we are here for you. To schedule a confidential appointment with a pastor, please call the church office at +251 47 111 2234 or send an email to <a href="mailto:info@hiwotberhan.org" class="text-forest hover:underline">info@hiwotberhan.org</a>. All pastoral conversations are strictly confidential.</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4" data-i18n="faq_q4">How can I get involved in a small group or fellowship?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faq_a4">Small groups and fellowship circles are a wonderful way to build deeper relationships and grow in your faith. We have several types of small groups including men's fellowship circles, women's Bible study groups, youth discipleship groups, married couples' fellowships, and mixed adult small groups. Most groups meet weekly or biweekly in members' homes or at the church. To find a group that fits your schedule and interests, visit the Welcome Desk, speak to any ministry leader, or email us at <a href="mailto:info@hiwotberhan.org" class="text-forest hover:underline">info@hiwotberhan.org</a>. We will help you find the perfect fit!</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <button class="accordion-btn w-full flex items-center justify-between p-6 text-left hover:bg-ivory-dark transition-colors">
+                    <h3 class="font-heading text-base font-bold text-forest-dark pr-4" data-i18n="faq_q5">Is the church accessible for people with disabilities?</h3>
+                    <svg class="accordion-icon w-5 h-5 text-charcoal/40 transition-transform flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="px-6 pb-6 text-charcoal/70 text-sm leading-relaxed" data-i18n="faq_a5">Yes, we are committed to making our church accessible to everyone. Our main building has wheelchair ramps at all entrances, designated accessible seating areas in the sanctuary, and accessible restroom facilities. We have reserved accessible parking spaces near the main entrance. If you have specific accessibility needs, please contact us in advance at +251 47 111 2233 so we can ensure you have the best possible experience. Our ushers and greeters are trained to assist visitors with mobility needs and will be happy to help you.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+<!-- FOOTER -->
+    <footer class="footer-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4 group">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">A place of worship, hope, and community in
+                        Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank"
+                            rel="noopener noreferrer" title="Facebook"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg></a>
+                        <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer"
+                            title="YouTube"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                        <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg></a>
+                        <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer"
+                            title="TikTok"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                    <ul class="space-y-2 text-sm text-white/60">
+                        <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                    <ul class="space-y-3 text-sm text-white/60">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>Jimma Town, Oromia, Ethiopia</li>
+                        <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                        <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>info@hiwotberhan.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+                <p>&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+                <p class="font-heading italic text-gold/60" data-i18n="footer_verse">"For where two or three gather in my name, there am I with them." — Matthew 18:20</p>
+            </div>
+        
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+    </footer>
+    <div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center modal-overlay">
+        <div class="relative w-full max-w-3xl mx-4">
+            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gold"><i data-lucide="x" class="w-8 h-8"></i></button>
+            <div class="bg-black rounded-xl overflow-hidden aspect-video"><iframe id="video-iframe" class="w-full h-full" frameborder="0" allowfullscreen allow="autoplay"></iframe></div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    setupForm('contact-form', 'contact-submit', '../api/submit_contact.php', 'Thank you! Your message has been sent. We will respond within 48 hours.');
+    setupForm('prayer-form', 'prayer-submit', '../api/submit_prayer.php', 'Your prayer request has been submitted. Our prayer team is lifting you up before God.');
+});
+</script>
+
+</body>
+</html>

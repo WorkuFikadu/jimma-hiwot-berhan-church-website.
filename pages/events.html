@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events — Jimma Hiwot Berhan Church</title>
+    <meta name="description" content="Stay up to date with upcoming events, annual celebrations, and community activities at Jimma Hiwot Berhan Church.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    forest: { DEFAULT: '#1A5632', dark: '#0d2e19', light: '#2d8a52' },
+                    gold: { DEFAULT: '#C9A84C', light: '#dfc677', dark: '#a88935' },
+                    terracotta: { DEFAULT: '#B85C38', light: '#d47a56' },
+                    ivory: { DEFAULT: '#FFFDF7', dark: '#F5F0E3' },
+                    charcoal: '#2D2D2D',
+                },
+                fontFamily: { heading: ['Playfair Display','Georgia','serif'], body: ['Inter','system-ui','sans-serif'] }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-ivory">
+<!-- Background Decoration -->
+<div class="bg-texture"></div>
+<div class="bg-pattern"></div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <div class="max-w-full mx-auto px-6 md:px-12 lg:px-16 nav-container transition-all duration-500">
+            <div class="flex items-center justify-between h-20 md:h-24 nav-container-inner transition-all duration-500">
+                <!-- Logo Section - Pushed Left -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative flex-shrink-0">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-14 h-14 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-[0_0_20px_rgba(201,168,76,0.4)] ring-2 ring-gold/60 group-hover:scale-110 group-hover:ring-gold transition-all duration-500">
+                        <div
+                            class="absolute -inset-1.5 border-2 border-gold/40 rounded-full animate-pulse pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-heading text-xl md:text-2xl font-bold text-white whitespace-nowrap tracking-tight logo-text"
+                            data-i18n="church_name">Jimma
+                            <span data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-[1px] bg-gold"></span>
+                            <span class="text-[9px] text-gold-light uppercase tracking-[0.4em] font-bold"
+                                data-i18n="church_location">Jimma,
+                                Ethiopia</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navigation Links - Centered/Pushed Right -->
+                <div class="hidden lg:flex items-center gap-2 xl:gap-4 border-r border-white/10 pr-6 mr-2">
+                        <a href="index.html" class="nav-link text-[14px]" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-link text-[14px]" data-i18n="nav_about">About</a>
+                        <!-- Connect Dropdown -->
+                        <div class="relative nav-dropdown">
+                            <button class="nav-link text-[14px] flex items-center gap-1.5 active">
+                                <span data-i18n="nav_connect">Connect</span>
+                                <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform opacity-70 nav-chevron"></i>
+                            </button>
+                            <div class="nav-dropdown-menu">
+                                <a href="services.html" class="dropdown-item" data-i18n="nav_services">Services</a>
+                                <a href="sermons.html" class="dropdown-item" data-i18n="nav_sermons">Sermons</a>
+                                <a href="events.html" class="dropdown-item active" data-i18n="nav_events">Events</a>
+                                <a href="ministries.html" class="dropdown-item" data-i18n="nav_ministries">Ministries</a>
+                            </div>
+                        </div>
+                        <a href="giving.html" class="nav-link text-[14px]" data-i18n="nav_giving">Giving</a>
+                        <a href="contact.html" class="nav-link text-[14px]" data-i18n="nav_contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <!-- Language Selector -->
+                        <div class="relative group">
+                            <button class="lang-selector-btn hover:bg-white/5 px-3 py-1.5 rounded-full transition-colors duration-300">
+                                <i data-lucide="languages" class="w-4 h-4 text-gold-light"></i>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-white/90"
+                                    data-i18n="lang_current">EN</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-white/50"></i>
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="lang-dropdown-menu">
+                                <a href="#" class="lang-option active" data-lang="en"><span>English</span> <span class="lang-badge" data-i18n="lang_current">EN</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="am"><span>አማርኛ</span> <span class="lang-badge">AM</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="om"><span data-i18n="lang_om">Afaan Oromoo</span> <span class="lang-badge">OM</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <a href="login.html"
+                            class="flex items-center gap-2 text-[13px] font-semibold text-forest-dark transition-all duration-300 tracking-wide px-6 py-2.5 bg-gold border border-gold rounded-full hover:bg-gold-light hover:scale-105 shadow-[0_4px_14px_rgba(201,168,76,0.3)] active:scale-95">
+                            <i data-lucide="user-circle" class="w-4 h-4"></i>
+                            <span data-i18n="btn_login">Login</span>
+                        </a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white bg-white/5 rounded-xl"><i
+                        data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        <!-- Bottom line gradient decoration -->
+        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-50"></div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 top-16 bg-forest-dark/98 z-40">
+        <div class="flex flex-col items-center justify-center h-full gap-5">
+            <a href="index.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_about">About</a>
+            <div class="flex flex-col items-center gap-3 my-2 bg-white/5 px-12 py-4 rounded-3xl border border-white/5 shadow-inner">
+                <span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span>
+                <a href="services.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_services">Services</a>
+                <a href="sermons.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_sermons">Sermons</a>
+                <a href="events.html" class="mobile-nav text-xl font-medium text-white hover:text-gold active" data-i18n="nav_events">Events</a>
+                <a href="ministries.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_ministries">Ministries</a>
+            </div>
+            <a href="giving.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_giving">Giving</a>
+            <a href="contact.html" class="mobile-nav text-xl font-medium text-white hover:text-gold" data-i18n="nav_contact">Contact</a>
+            
+            <div class="h-px w-24 bg-white/10 my-2"></div>
+
+            <!-- Mobile Language & Login -->
+            <div class="flex gap-8">
+                <div class="text-center">
+                    <p class="text-xs text-gold-light uppercase tracking-widest mb-3 opacity-60" data-i18n="lang_label">Language</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white font-medium hover:text-gold"
+                            onclick="switchLanguage('en'); return false;">EN</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('am'); return false;">AM</a>
+                        <a href="#" class="text-white/60 hover:text-gold transition-colors"
+                            onclick="switchLanguage('om'); return false;">OM</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="login.html"
+                class="mt-4 px-10 py-3 border border-white/20 rounded-full text-white font-semibold hover:bg-white/10 transition-colors">
+                <i data-lucide="user-circle" class="w-5 h-5 inline-block mr-2 -mt-1 text-gold-light"></i><span
+                    data-i18n="btn_member_login">Member Login</span>
+            </a>
+        </div>
+    </div>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero relative bg-forest-dark pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Events Background" class="w-full h-full object-cover opacity-25 animate-slow-zoom">
+        <div class="page-hero-overlay absolute inset-0 z-10"></div>
+    </div>
+    <div class="relative z-20 max-w-4xl mx-auto px-4 text-center">
+        <nav class="breadcrumb text-sm mb-4">
+            <a href="index.html" data-i18n="nav_home">Home</a> <span class="text-white/40 mx-2">/</span> <span class="text-white/60" data-i18n="nav_events">Events</span>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-i18n="events_hero_title">Events</h1>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto font-light" data-i18n="events_hero_desc">Stay connected with what is happening at Jimma Hiwot Berhan Church. From worship nights to community outreach, there is something for everyone.</p>
+    </div>
+</section>
+
+<!-- WHAT'S HAPPENING INTRO -->
+<section class="py-16 md:py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div class="lg:w-1/2 fade-in">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-gold/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-forest/5 rounded-full blur-3xl"></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <img src="../images/photo_2026-04-08_12-40-33.jpg" alt="Church event" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500">
+                            <img src="../images/photo_2026-04-08_12-41-32.jpg" alt="Worship" class="w-full h-48 object-cover rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500">
+                        </div>
+                        <div class="pt-8 space-y-4">
+                            <img src="../images/photo_2026-04-08_12-42-40.jpg" alt="Fellowship" class="w-full h-48 object-cover rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500">
+                            <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Gathering" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark mb-6 section-title section-title-left" data-i18n="events_vibrant_title">Vibrant Community Life</h2>
+                <div class="content-section text-charcoal/70 space-y-6">
+                    <p class="text-lg leading-relaxed" data-i18n="events_vibrant_p1">
+                        Life at Jimma Hiwot Berhan Church is full of opportunities to connect, grow, and serve. Throughout the year, we host a wide variety of events designed to strengthen your faith, deepen your relationships, and engage our community.
+                    </p>
+                    <p class="leading-relaxed" data-i18n="events_vibrant_p2">
+                        From powerful worship nights and Bible conferences to fun-filled family days and community service projects, our events calendar reflects the vibrancy and diversity of our church family.
+                    </p>
+                    <p class="leading-relaxed" data-i18n="events_vibrant_p3">
+                        Whether you are looking for a place to bring your family, a space to grow in your faith, or an opportunity to make a difference in the community, you will find it here. We encourage you to mark your calendars, invite a friend, and come ready to experience God's goodness in a fresh way.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm border border-forest/5">
+                            <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center text-gold-dark">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-bold text-forest-dark text-sm uppercase tracking-wider" data-i18n="tag_community">Community</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm border border-forest/5">
+                            <div class="w-10 h-10 bg-forest/10 rounded-full flex items-center justify-center text-forest">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-bold text-forest-dark text-sm uppercase tracking-wider" data-i18n="tag_growth">Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- UPCOMING EVENTS TIMELINE -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="events_title">Upcoming Events</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="events_upcoming_sub">Our upcoming events and activities. Don't miss out on these opportunities to connect and grow!</p>
+        </div>
+        <div id="events-timeline" class="max-w-3xl mx-auto fade-in">
+            <div class="text-center py-12 text-charcoal/40" data-i18n="label_loading">
+                <i data-lucide="loader" class="w-8 h-8 animate-spin mx-auto mb-3"></i>
+                Loading events...
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANNUAL EVENTS CALENDAR -->
+<section class="py-16 md:py-24 bg-ivory-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="events_annual_title">Annual Events Calendar</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="events_annual_sub">Our special recurring events throughout the year mark the rhythm of life at Jimma Hiwot Berhan Church.</p>
+        </div>
+        <div class="overflow-x-auto rounded-2xl shadow-lg fade-in">
+            <table class="church-table w-full text-sm">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-4 text-left font-semibold uppercase tracking-wider rounded-tl-xl" data-i18n="table_month">Month</th>
+                        <th class="px-4 py-4 text-left font-semibold uppercase tracking-wider" data-i18n="table_event">Event</th>
+                        <th class="px-4 py-4 text-left font-semibold uppercase tracking-wider hidden md:table-cell" data-i18n="table_desc">Description</th>
+                        <th class="px-4 py-4 text-left font-semibold uppercase tracking-wider rounded-tr-xl" data-i18n="table_type">Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_jan">January</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_1_title">New Year Prayer &amp; Fasting</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_1_desc">Three days of corporate prayer and fasting to dedicate the new year to God and seek His direction.</td>
+                        <td class="px-4 py-4"><span class="bg-forest/10 text-forest px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_spiritual">Spiritual</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_mar">March</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_2_title">Women's Retreat</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_2_desc">A weekend retreat for women featuring worship, teaching, prayer, and fellowship at a beautiful retreat center outside Jimma.</td>
+                        <td class="px-4 py-4"><span class="bg-terracotta/10 text-terracotta px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_retreat">Retreat</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_apr">April</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_3_title">Easter Celebrations</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_3_desc">Good Friday service, Easter sunrise service, and main Easter worship celebrating the resurrection of Christ.</td>
+                        <td class="px-4 py-4"><span class="bg-gold/10 text-gold-dark px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_worship">Worship</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_may">May</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_4_title">Youth Conference</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_4_desc">Annual multi-day conference for youth ages 12-30 with guest speakers, worship, workshops, and fellowship activities.</td>
+                        <td class="px-4 py-4"><span class="bg-forest-light/10 text-forest-light px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_youth">Youth</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_jun">June</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_5_title">VBS (Children's Camp)</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_5_desc">A fun-filled week of Bible stories, crafts, games, songs, and activities for children aged 4-12.</td>
+                        <td class="px-4 py-4"><span class="bg-gold/10 text-gold-dark px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_children">Children</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_jul">July</td>
+                        <td class="px-4 py-4 font-medium text-terracotta font-bold" data-i18n="annual_6_title">Church Anniversary (July 20)</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_6_desc">Celebrating our founding with a special worship service, testimonies, anniversary meal, and vision casting for the year ahead.</td>
+                        <td class="px-4 py-4"><span class="bg-terracotta/10 text-terracotta px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_celebration">Celebration</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_sep">September</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_7_title">Family Day</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_7_desc">A special day for families with games, food, family devotion, and activities that strengthen family bonds.</td>
+                        <td class="px-4 py-4"><span class="bg-forest/10 text-forest px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_family">Family</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_oct">October</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_8_title">Harvest Thanksgiving</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_8_desc">A service of thanksgiving for God's provision, featuring special music, testimonies of gratitude, and a shared meal.</td>
+                        <td class="px-4 py-4"><span class="bg-gold/10 text-gold-dark px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_worship">Worship</span></td>
+                    </tr>
+                    <tr class="border-b border-forest/5">
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_nov">November</td>
+                        <td class="px-4 py-4 font-medium" data-i18n="annual_9_title">Community Outreach</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_9_desc">A month-long series of community service projects including food drives, clothing distribution, and health screenings.</td>
+                        <td class="px-4 py-4"><span class="bg-forest-light/10 text-forest-light px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_outreach">Outreach</span></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-4 font-semibold text-forest-dark" data-i18n="month_dec">December</td>
+                        <td class="px-4 py-4 font-medium text-terracotta font-bold" data-i18n="annual_10_title">Christmas Celebration (Dec 25)</td>
+                        <td class="px-4 py-4 text-charcoal/70 hidden md:table-cell" data-i18n="annual_10_desc">Christmas worship service with choir performances, nativity drama, candlelight worship, and communal feast.</td>
+                        <td class="px-4 py-4"><span class="bg-terracotta/10 text-terracotta px-2 py-1 rounded-full text-xs font-medium" data-i18n="tag_celebration">Celebration</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- PAST EVENTS GALLERY -->
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-forest-dark section-title mb-6" data-i18n="events_past_title">Past Events Gallery</h2>
+            <p class="text-charcoal/60 mt-8" data-i18n="events_past_desc">A look back at some of our recent events. These moments remind us of God's faithfulness and the joy of community.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in">
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="../images/photo_2026-04-08_12-45-42.jpg" alt="Christmas Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-gold hover:text-forest-dark transition-all scale-0 group-hover:scale-100 duration-300">
+                        <i data-lucide="play" class="w-6 h-6 fill-current"></i>
+                    </button>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="event_gallery_1_title">Christmas Celebration 2025</h3>
+                    <p class="text-xs text-charcoal/50 mb-3" data-i18n="event_gallery_1_date">December 25, 2025</p>
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="event_gallery_1_desc">
+                        A beautiful Christmas worship service featuring our children's choir nativity performance and a powerful Christmas message.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <button class="inline-flex items-center gap-1 text-sm font-semibold text-forest hover:text-forest-light transition-colors">
+                            <i data-lucide="image" class="w-4 h-4"></i> <span data-i18n="btn_view_photos">View Photos</span>
+                        </button>
+                        <button onclick="openVideo('https://www.youtube.com/embed/z16qLaRTXdo')" class="text-gold-dark hover:text-gold transition-colors">
+                            <i data-lucide="youtube" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="../images/photo_2026-04-08_12-43-32.jpg" alt="Youth Camp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="event_gallery_2_title">Youth Camp 2025</h3>
+                    <p class="text-xs text-charcoal/50 mb-3" data-i18n="event_gallery_2_date">August 2025</p>
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="event_gallery_2_desc">
+                        Our annual youth camp at Bishoftu brought together 200 young people for four days of worship and adventures.
+                    </p>
+                    <button class="inline-flex items-center gap-1 text-sm font-semibold text-forest hover:text-forest-light transition-colors">
+                        <i data-lucide="image" class="w-4 h-4"></i> <span data-i18n="btn_view_photos">View Photos</span>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="../images/photo_2026-04-08_12-45-27.jpg" alt="Church Anniversary" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="event_gallery_3_title">Church Anniversary 2025</h3>
+                    <p class="text-xs text-charcoal/50 mb-3" data-i18n="event_gallery_3_date">July 20, 2025</p>
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="event_gallery_3_desc">
+                        We celebrated God's faithfulness with a grand service. Former members returned to rejoice together.
+                    </p>
+                    <button class="inline-flex items-center gap-1 text-sm font-semibold text-forest hover:text-forest-light transition-colors">
+                        <i data-lucide="image" class="w-4 h-4"></i> <span data-i18n="btn_view_photos">View Photos</span>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-ivory rounded-2xl overflow-hidden shadow-md church-card group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="../images/photo_2026-04-08_12-45-16.jpg" alt="Community Outreach" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-heading font-bold text-forest-dark mb-1" data-i18n="event_gallery_4_title">Community Outreach 2025</h3>
+                    <p class="text-xs text-charcoal/50 mb-3" data-i18n="event_gallery_4_date">November 2025</p>
+                    <p class="text-charcoal/70 text-sm leading-relaxed mb-4" data-i18n="event_gallery_4_desc">
+                        Volunteers served the community by distributing food packages and providing free health screenings.
+                    </p>
+                    <button class="inline-flex items-center gap-1 text-sm font-semibold text-forest hover:text-forest-light transition-colors">
+                        <i data-lucide="image" class="w-4 h-4"></i> <span data-i18n="btn_view_photos">View Photos</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOST AN EVENT -->
+<section class="py-16 md:py-24 bg-forest-dark text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center fade-in">
+            <div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gold section-title section-title-left mb-8" data-i18n="host_event_title">Host an Event at Jimma Hiwot Berhan Church</h2>
+                <div class="space-y-4 text-white/70 leading-relaxed">
+                    <p data-i18n="host_event_p1">
+                        Our church facilities are available for weddings, conferences, seminars, workshops, community meetings, and other special events. We have a range of spaces to accommodate groups of various sizes, from intimate gatherings of 20 people to large conferences of up to 1,000 attendees.
+                    </p>
+                    <p data-i18n="host_event_p2">
+                        Our facilities include the main sanctuary (seating 1,500), a fellowship hall (seating 200), a youth hall (seating 100), multiple classrooms, a kitchen, and outdoor grounds suitable for large events. Audio-visual equipment, sound systems, and projectors are available for use upon request.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                <h3 class="font-heading text-xl font-bold text-white mb-6" data-i18n="booking_info_title">Booking Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-gold flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <p class="text-white font-medium text-sm" data-i18n="booking_call">Call Us</p>
+                            <p class="text-white/60 text-sm" data-i18n="booking_call_desc">+251 47 111 2233 (Office Hours: Mon-Sat 8AM-5PM)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-gold flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <p class="text-white font-medium text-sm" data-i18n="booking_email">Email Us</p>
+                            <p class="text-white/60 text-sm" data-i18n="booking_email_desc">events@hiwotberhan.org — Please include event type, date, and estimated attendance.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="clock" class="w-5 h-5 text-gold flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <p class="text-white font-medium text-sm" data-i18n="booking_notice">Advance Notice</p>
+                            <p class="text-white/60 text-sm" data-i18n="booking_notice_desc">Please book at least 2 weeks in advance. Weddings require at least 3 months advance booking.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="file-text" class="w-5 h-5 text-gold flex-shrink-0 mt-0.5"></i>
+                        <div>
+                            <p class="text-white font-medium text-sm" data-i18n="booking_req">Requirements</p>
+                            <p class="text-white/60 text-sm" data-i18n="booking_req_desc">A facility use form must be completed and signed. Fees vary depending on the facility and duration of use. Church members receive discounted rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-gold text-forest-dark font-bold rounded-xl hover:bg-gold-light transition-colors mt-6 text-sm">
+                    <i data-lucide="message-square" class="w-4 h-4"></i> <span data-i18n="btn_contact_booking">Contact Us About Booking</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    const timeline = document.getElementById('events-timeline');
+    const iconColors = ['bg-forest', 'bg-gold-dark', 'bg-terracotta', 'bg-forest-light', 'bg-gold'];
+
+    try {
+        const data = await fetchAPI('../api/get_events.php');
+        if (data && data.length > 0) {
+            renderEvents(data);
+        } else {
+            renderFallbackEvents();
+        }
+    } catch(e) {
+        renderFallbackEvents();
+    }
+
+    function renderEvents(events) {
+        let html = '<div class="relative pl-14"><div class="timeline-line"></div>';
+        events.forEach(function(ev, i) {
+            var ci = i % iconColors.length;
+            var dateStr = ev.date ? formatDate(ev.date) : 'Date TBD';
+            var monthShort = ev.date ? getMonthShort(ev.date) : 'TBD';
+            var dayNum = ev.date ? getDayNum(ev.date) : '--';
+            html += '<div class="relative mb-10">' +
+                '<div class="absolute -left-14 w-12 h-12 ' + iconColors[ci] + ' rounded-xl flex flex-col items-center justify-center shadow-lg px-1 z-10">' +
+                '<span class="text-white font-bold text-[10px] leading-none">' + monthShort + '</span>' +
+                '<span class="text-white font-bold text-lg leading-none">' + dayNum + '</span></div>' +
+                '<div class="bg-ivory rounded-2xl overflow-hidden shadow-md ml-4 church-card group lg:flex">' +
+                (ev.image ? '<div class="lg:w-48 h-40 lg:h-auto overflow-hidden relative flex-shrink-0">' +
+                '<img src="' + ev.image + '" alt="' + ev.title + '" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">' +
+                (ev.video ? '<button onclick="openVideo(\'' + ev.video + '\')" class="absolute inset-0 m-auto w-10 h-10 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-gold transition-all"><i data-lucide="play" class="w-5 h-5 fill-current"></i></button>' : '') +
+                '</div>' : '') +
+                '<div class="p-6 flex-grow">' +
+                '<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">' +
+                '<h3 class="font-heading text-lg font-bold text-forest-dark">' + (ev.title || 'Event') + '</h3>' +
+                (ev.video ? '<button onclick="openVideo(\'' + ev.video + '\')" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-dark hover:text-gold uppercase tracking-widest">' +
+                '<i data-lucide="video" class="w-3.5 h-3.5"></i> Watch Trailer</button>' : '') +
+                '</div>' +
+                '<p class="text-gold-dark text-sm mb-3 flex items-center gap-2">' +
+                '<i data-lucide="clock" class="w-4 h-4"></i> ' + dateStr + '</p>' +
+                '<p class="text-charcoal/70 text-sm leading-relaxed">' + (ev.description || '') + '</p>' +
+                (ev.location ? '<p class="text-charcoal/50 text-xs mt-4 flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-dark"></i> ' + ev.location + '</p>' : '') +
+                '</div></div></div>';
+        });
+        html += '</div>';
+        timeline.innerHTML = html;
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function renderFallbackEvents() {
+        var fallback = [
+            { title: 'Annual Worship Night', date: '2025-01-25', description: 'An unforgettable evening of praise, worship, and prayer. Our worship team and guest musicians come together for a night of encountering God\'s presence.', location: 'Main Sanctuary', image: '../images/photo_2026-04-08_12-39-39.jpg', video: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'Community Health Fair', date: '2025-02-15', description: 'Free health screenings, blood pressure checks, and health education workshops for all ages. In partnership with local health organizations.', location: 'Church Grounds', image: '../images/photo_2026-04-08_12-37-34.jpg' },
+            { title: 'Youth Conference 2025', date: '2025-03-08', description: 'Dynamic speakers, worship sessions, and fellowship activities for young people aged 12-30. Don\'t miss this life-changing event!', location: 'Community Hall', image: '../images/photo_2026-04-08_12-31-14.jpg', video: 'https://www.youtube.com/embed/z16qLaRTXdo' },
+            { title: 'Women\'s Retreat', date: '2025-03-22', description: 'A weekend retreat for women featuring worship, teaching, prayer, and fellowship. A time to rest and reconnect with God.', location: 'Bishoftu Retreat Center', image: '../images/photo_2026-04-08_12-23-18.jpg' },
+            { title: 'Easter Sunrise Service', date: '2025-04-20', description: 'Begin Easter morning with a powerful sunrise service at 5:00 AM. Celebrate the resurrection with hymns of victory.', location: 'Church Courtyard', image: '../images/photo_2026-04-08_12-18-11.jpg' }
+        ];
+        renderEvents(fallback);
+    }
+});
+</script>
+
+
+<!-- FOOTER -->
+    <footer class="footer-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4 group">
+                        <img src="../images/church_logo.jpg" alt="Jimma Hiwot Berhan Church Logo"
+                            class="w-12 h-12 object-contain bg-white rounded-full p-0.5 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <span class="font-heading text-xl font-bold" data-i18n="church_name">Jimma Hiwot Berhan Church</span>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">A place of worship, hope, and community in
+                        Jimma, Ethiopia. Serving God and serving our community with love and dedication.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/jimmayehiywotberhanchurch" target="_blank"
+                            rel="noopener noreferrer" title="Facebook"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1877F2] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg></a>
+                        <a href="https://www.youtube.com/@JHBC-z3u" target="_blank" rel="noopener noreferrer"
+                            title="YouTube"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                        <a href="https://t.me/jhbc1" target="_blank" rel="noopener noreferrer" title="Telegram"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#26A5E4] transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg></a>
+                        <a href="https://www.tiktok.com/@jhbc13" target="_blank" rel="noopener noreferrer"
+                            title="TikTok"
+                            class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold transition-colors"><svg
+                                class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/jhbc.13?igsh=bmJwZ3BkdGZ5a3h3" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" /></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_quick_links">Quick Links</h4>
+                            <ul class="space-y-2 text-sm flex flex-col">
+                                <li><a href="index.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_home">Home</a></li>
+                                <li><a href="about.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_about">About Us</a></li>
+                                
+                                <li class="pt-2"><span class="text-[11px] text-gold-light uppercase tracking-widest font-bold opacity-80" data-i18n="nav_connect">Connect</span></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="services.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_services">Worship Services</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="sermons.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_sermons">Sermons</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="events.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_events">Events</a></li>
+                                <li class="pl-3 border-l border-white/10 ml-1"><a href="ministries.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_ministries">Ministries</a></li>
+                                
+                                <li class="pt-2"><a href="giving.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_giving">Giving</a></li>
+                                <li><a href="contact.html" class="text-white/60 hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a></li>
+                            </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_service_times">Service Times</h4>
+                    <ul class="space-y-2 text-sm text-white/60">
+                        <li><span class="text-white/80 font-medium" data-i18n="day_sunday">Sunday:</span> 9:00 AM &amp; 10:00 AM</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_wednesday">Wednesday:</span> 4:00 PM Prayer</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_thursday">Thursday:</span> 4:30 PM Bible Study</li>
+                        <li><span class="text-white/80 font-medium" data-i18n="day_saturday">Saturday:</span> Kids &amp; Women</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-gold mb-4" data-i18n="footer_contact">Contact</h4>
+                    <ul class="space-y-3 text-sm text-white/60">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>Jimma Town, Oromia, Ethiopia</li>
+                        <li class="flex items-start gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>+251 47 111 2233</li>
+                        <li class="flex items-start gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5"></i>info@hiwotberhan.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+                <p>&copy; 2026 Jimma Hiwot Berhan Church. All rights reserved.</p>
+                <p class="font-heading italic text-gold/60" data-i18n="footer_verse">"For where two or three gather in my name, there am I with them." — Matthew 18:20</p>
+            </div>
+        
+                    <div class="border-t border-white/10 pt-4 mt-4 text-center text-xs text-white/40 tracking-widest font-mono">
+                        DEVELOPED BY: Worku Fikadu &nbsp; +251934953593, workufikadu643@gmail.com
+                    </div>
+                </div>
+    </footer>
+    <div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center modal-overlay">
+        <div class="relative w-full max-w-3xl mx-4">
+            <button onclick="closeVideoModal()" class="absolute -top-10 right-0 text-white hover:text-gold"><i data-lucide="x" class="w-8 h-8"></i></button>
+            <div class="bg-black rounded-xl overflow-hidden aspect-video"><iframe id="video-iframe" class="w-full h-full" frameborder="0" allowfullscreen allow="autoplay"></iframe></div>
+        </div>
+    </div>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
